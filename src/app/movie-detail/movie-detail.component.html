@@ -1,9 +1,12 @@
-<a (click)= "goBack()"> return to list</a>
+
+<main *ngIf="movie" class="container" id>
+  <a (click)= "goBack()" class="return-link"> return to list</a>
 <h1>Movie: {{movie.title}}</h1>
-<p>{{movie.status}} - {{movie.year}}</p>
-<iframe width="420" height="345"
+<p id="movie-status">{{movie.status}} - {{movie.year}}</p>
+<iframe
 [src] ="(movie.trailer).replace('watch?v=','embed/') | safeUrl" allow="fullscreen"></iframe>
 
 <h2>Synopsis</h2>
 
 {{movie.overview}}
+</main>

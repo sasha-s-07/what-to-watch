@@ -74,7 +74,7 @@ getMoviesGenres(): Observable<Genre[]>{
  */
 getTrendingMovies(filter:string[]){
     filter.push('extended=full');// get full info of items
-    //console.log(filter);
+    //console.log('https://api.trakt.tv/movies/trending?' + filter.join('&'));
     return this.http.get('https://api.trakt.tv/movies/trending?' + filter.join('&'), this.httpOptions)
             .pipe(
               retry(2),
