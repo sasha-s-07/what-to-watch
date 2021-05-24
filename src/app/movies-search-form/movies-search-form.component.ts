@@ -32,7 +32,7 @@ export class MoviesSearchFormComponent implements OnInit {
   }
   /* handle the search form submission */
   onSubmit() {
-    this.moviesListUrl = '/movies-list?';
+    this.moviesListUrl = './movies-list?';
     this.searchParams = [];
     //console.log(this.genre,this.language,this.country,this.year);
     // add filter params to the url
@@ -50,7 +50,7 @@ export class MoviesSearchFormComponent implements OnInit {
     }
     //add params to the style
     this.moviesListUrl += this.searchParams.join('&');
-    console.log(this.searchParams, this.moviesListUrl);
+    //console.log(this.searchParams, this.moviesListUrl);
     location.href = this.moviesListUrl;
    }
 
