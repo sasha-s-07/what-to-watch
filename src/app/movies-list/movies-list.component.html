@@ -1,0 +1,9 @@
+<h1>Top 10 trending movies</h1>
+
+<ul>
+  <li *ngFor="let movie of movies">    
+  <a routerLink="/movie-detail/{{movie.movie.ids.trakt}}">
+      {{movie.movie.title}}
+  </a>
+  </li>
+</ul>

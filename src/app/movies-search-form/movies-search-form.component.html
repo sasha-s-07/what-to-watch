@@ -1,0 +1,37 @@
+<h1>Trending movies</h1>
+
+<form (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="genre">Genre:</label>
+    <select class="form-control"  id="genre" name="genre"
+    [(ngModel)]="genre" [ngModelOptions]="{standalone: true}">
+      <option value="">select a genre</option>
+      <option *ngFor="let g of genres" [value]="g.slug">{{g.name}}</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="year">Year:</label>
+    <select class="form-control"  id="year" name="year"
+    [(ngModel)]="year" [ngModelOptions]="{standalone: true}">
+      <option value="" selected>select a year</option>
+      <option *ngFor="let y of years" [value]="y">{{y}}</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="language">Language:</label>
+    <select class="form-control"  id="language" name="language"
+    [(ngModel)]="language" [ngModelOptions]="{standalone: true}">
+      <option value="">select a language</option>
+      <option *ngFor="let l of languages" [value]="l.code">{{l.name}}</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="country">Country:</label>
+    <select class="form-control"  id="country" country
+    [(ngModel)]="country" [ngModelOptions]="{standalone: true}">
+      <option value="">select a country</option>
+      <option *ngFor="let c of countries" [value]="c.code">{{c.name}}</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-success">Submit</button>
+</form>
