@@ -252,24 +252,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _movies_search_form_component_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./movies-search-form.component.css */ "f8zo");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "fXoL");
 /* harmony import */ var _movies_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../movies.service */ "ny8X");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "tyNb");
+
 
 
 
 
 
 let MoviesSearchFormComponent = class MoviesSearchFormComponent {
-    constructor(moviesService) {
+    constructor(moviesService, router) {
         this.moviesService = moviesService;
+        this.router = router;
         this.genre = ""; // movie Genre
         this.year = ""; // movie Year
         this.language = ""; // movie language
         this.country = ""; // movie country
-        this.moviesListUrl = '';
-        this.years = ["2018", "2019", "2020", "2021"];
+        this.years = ["2017", "2018", "2019", "2020", "2021"];
         this.genres = [];
         this.languages = [];
         this.countries = [];
-        this.searchParams = [];
+        this.filter = {};
     }
     ngOnInit() {
         this.getMoviesCountries();
@@ -278,26 +280,24 @@ let MoviesSearchFormComponent = class MoviesSearchFormComponent {
     }
     /* handle the search form submission */
     onSubmit() {
-        this.moviesListUrl = '/movies-list?';
-        this.searchParams = [];
+        this.filter = {}; // clear the filter
         //console.log(this.genre,this.language,this.country,this.year);
-        // add filter params to the url
+        // add filter params
         if (this.genre) {
-            this.searchParams.push('genre=' + this.genre);
+            this.filter.genre = this.genre;
         }
         if (this.year) {
-            this.searchParams.push('year=' + this.year);
+            this.filter.year = this.year;
         }
         if (this.language) {
-            this.searchParams.push('language=' + this.language);
+            this.filter.language = this.language;
         }
         if (this.country) {
-            this.searchParams.push('country=' + this.country);
+            this.filter.country = this.country;
         }
-        //add params to the style
-        this.moviesListUrl += this.searchParams.join('&');
-        console.log(this.searchParams, this.moviesListUrl);
-        location.href = this.moviesListUrl;
+        //console.log(this.filter);
+        //location.href = this.moviesListUrl;
+        this.router.navigate(['/movies-list'], { queryParams: this.filter });
     }
     getMoviesCountries() {
         this.moviesService.getMoviesCountries()
@@ -313,7 +313,8 @@ let MoviesSearchFormComponent = class MoviesSearchFormComponent {
     }
 };
 MoviesSearchFormComponent.ctorParameters = () => [
-    { type: _movies_service__WEBPACK_IMPORTED_MODULE_4__["MoviesService"] }
+    { type: _movies_service__WEBPACK_IMPORTED_MODULE_4__["MoviesService"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"] }
 ];
 MoviesSearchFormComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({
@@ -699,4 +700,4 @@ webpackEmptyAsyncContext.id = "zn8P";
 /***/ })
 
 },[[0,"runtime","vendor"]]]);
-//# sourceMappingURL=main.0f2f79f6b828c78a9335.js.map
+//# sourceMappingURL=main.5e8f20998632274e492d.js.map
