@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Country } from "../country";
 import { Language } from "../language";
 import { Genre } from "../genre";
+import { Filter } from "../filter";
 import { MoviesService } from "../movies.service";
+import { Router} from '@angular/router';
 
 @Component({
   selector: 'app-movies-search-form',
@@ -14,16 +16,14 @@ export class MoviesSearchFormComponent implements OnInit {
   year?: string = ""; // movie Year
   language?: string = ""; // movie language
   country?: string = ""; // movie country
-  moviesListUrl: string = '';
 
-  years = ["2018","2019","2020","2021"];
+  years = ["2017","2018","2019","2020","2021"];
 
   genres:Genre[] = [];
   languages:Language[] = [];
   countries: Country[] = [];
-  searchParams: string[] = [];
-
-  constructor(private moviesService: MoviesService) { }
+  filter: Filter = {};
+  constructor(private moviesService: MoviesService, private router: Router) { }
 
   ngOnInit(): void {
     this.getMoviesCountries();
@@ -32,26 +32,25 @@ export class MoviesSearchFormComponent implements OnInit {
   }
   /* handle the search form submission */
   onSubmit() {
-    this.moviesListUrl = './movies-list?';
-    this.searchParams = [];
+    this.filter = {};// clear the filter
     //console.log(this.genre,this.language,this.country,this.year);
-    // add filter params to the url
+    // add filter params
     if(this.genre){
-      this.searchParams.push('genre=' + this.genre);
+      this.filter.genre = this.genre;
     }
     if(this.year){
-      this.searchParams.push('year=' + this.year);
+      this.filter.year = this.year;
     }
     if(this.language){
-      this.searchParams.push('language=' + this.language);
+      this.filter.language = this.language;
     }
     if(this.country){
-      this.searchParams.push('country=' + this.country);
+      this.filter.country = this.country;
     }
-    //add params to the style
-    this.moviesListUrl += this.searchParams.join('&');
-    //console.log(this.searchParams, this.moviesListUrl);
-    location.href = this.moviesListUrl;
+
+    //console.log(this.filter);
+    //location.href = this.moviesListUrl;
+    this.router.navigate(['/movies-list'], { queryParams: this.filter });
    }
 
   getMoviesCountries(): void {
