@@ -2,14 +2,18 @@
   <a (click)= "goBack()" class="return-link"> new search</a>
   <h1>Top 10 trending movies</h1>
 
-  
 
-  <ul>
+
+  <ul *ngIf="movies?.length > 0; else noResult">
     <li *ngFor="let movie of movies">
     <a routerLink="/movie-detail/{{movie.movie.ids.trakt}}">
         {{movie.movie.title}}
     </a>
     </li>
   </ul>
-  <p *ngIf="!movies?.length > 0" class="no-result"> No result found !</p>
+  <ng-template  #noResult>
+    <div class="no-result">
+      No result found !
+    </div>
+  </ng-template>
 </main>

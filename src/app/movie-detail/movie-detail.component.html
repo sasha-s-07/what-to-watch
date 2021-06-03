@@ -3,8 +3,14 @@
   <a (click)= "goBack()" class="return-link"> return to list</a>
 <h1>Movie: {{movie.title}}</h1>
 <p id="movie-status">{{movie.status}} - {{movie.year}}</p>
-<iframe
+<iframe *ngIf="movie.trailer; else elseBlock"
 [src] ="(movie.trailer).replace('http','https').replace('watch?v=','embed/') | safeUrl" allow="fullscreen"></iframe>
+
+<ng-template #elseBlock>
+  <div class="no-result">
+    No trailer available!
+  </div>
+</ng-template>
 
 <h2>Synopsis</h2>
 
