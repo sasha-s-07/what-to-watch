@@ -10,7 +10,7 @@ import { MoviesService } from "../movies.service";
   styleUrls: ['./movies-list.component.css']
 })
 export class MoviesListComponent implements OnInit {
-
+  year:string = "";
   filter: string[] = [];
   movies: any;
   constructor(private route: ActivatedRoute, private moviesService: MoviesService,private location: Location) { }
@@ -27,10 +27,19 @@ export class MoviesListComponent implements OnInit {
   getParams(): void{
     this.filter = [] // clear the filter
     this.route.queryParams.subscribe(params => {
-      if(params['genre']){this.filter.push('genres=' + params['genre'])}
-      if(params['year']){this.filter.push('years=' + params['year'])}
-      if(params['language']){this.filter.push('languages=' + params['language'])}
-      if(params['country']){this.filter.push('countries=' + params['country'])}
+      if(params['genre']){
+        this.filter.push('genres=' + params['genre']);
+      }
+      if(params['year']){
+        this.filter.push('years=' + params['year']);
+        this.year = params['year'];
+      }
+      if(params['language']){
+        this.filter.push('languages=' + params['language']);
+    }
+      if(params['country']){
+        this.filter.push('countries=' + params['country']);
+      }
 
       //console.log(this.filter);
 

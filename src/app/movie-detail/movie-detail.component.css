@@ -1,6 +1,5 @@
 /* styling for movie details page */
 main{
-  background-color: #e4efe7;
   padding-bottom: 1em;
 }
 h1{
@@ -9,8 +8,8 @@ h1{
 }
 iframe{
   display: block;
-  height: 20em;
-  width: 55%;
+  height: 30em;
+  width: 60%;
   margin: auto;
 }
 #movie-status{

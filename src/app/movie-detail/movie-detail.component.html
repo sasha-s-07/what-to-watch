@@ -4,7 +4,7 @@
 <h1>Movie: {{movie.title}}</h1>
 <p id="movie-status">{{movie.status}} - {{movie.year}}</p>
 <iframe
-[src] ="(movie.trailer).replace('watch?v=','embed/') | safeUrl" allow="fullscreen"></iframe>
+[src] ="(movie.trailer).replace('http','https').replace('watch?v=','embed/') | safeUrl" allow="fullscreen"></iframe>
 
 <h2>Synopsis</h2>
 

@@ -88,7 +88,7 @@ SafeUrlPipe = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("/* styling for movie details page */\nmain{\n  background-color: #e4efe7;\n  padding-bottom: 1em;\n}\nh1{\n\n  margin-bottom: 0px;\n}\niframe{\n  display: block;\n  height: 20em;\n  width: 55%;\n  margin: auto;\n}\n#movie-status{\n  color: gray;\n  text-transform: capitalize;\n  padding: 0px;\n  margin-bottom: 1em;\n}\nh2{\n  text-transform: capitalize;\n}\n@media only screen and (max-width: 600px) {\n\n  iframe{\n    width: 100%;\n  }\n\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1vdmllLWRldGFpbC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLG1DQUFtQztBQUNuQztFQUNFLHlCQUF5QjtFQUN6QixtQkFBbUI7QUFDckI7QUFDQTs7RUFFRSxrQkFBa0I7QUFDcEI7QUFDQTtFQUNFLGNBQWM7RUFDZCxZQUFZO0VBQ1osVUFBVTtFQUNWLFlBQVk7QUFDZDtBQUNBO0VBQ0UsV0FBVztFQUNYLDBCQUEwQjtFQUMxQixZQUFZO0VBQ1osa0JBQWtCO0FBQ3BCO0FBRUE7RUFDRSwwQkFBMEI7QUFDNUI7QUFDQTs7RUFFRTtJQUNFLFdBQVc7RUFDYjs7QUFFRiIsImZpbGUiOiJtb3ZpZS1kZXRhaWwuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIHN0eWxpbmcgZm9yIG1vdmllIGRldGFpbHMgcGFnZSAqL1xubWFpbntcbiAgYmFja2dyb3VuZC1jb2xvcjogI2U0ZWZlNztcbiAgcGFkZGluZy1ib3R0b206IDFlbTtcbn1cbmgxe1xuXG4gIG1hcmdpbi1ib3R0b206IDBweDtcbn1cbmlmcmFtZXtcbiAgZGlzcGxheTogYmxvY2s7XG4gIGhlaWdodDogMjBlbTtcbiAgd2lkdGg6IDU1JTtcbiAgbWFyZ2luOiBhdXRvO1xufVxuI21vdmllLXN0YXR1c3tcbiAgY29sb3I6IGdyYXk7XG4gIHRleHQtdHJhbnNmb3JtOiBjYXBpdGFsaXplO1xuICBwYWRkaW5nOiAwcHg7XG4gIG1hcmdpbi1ib3R0b206IDFlbTtcbn1cblxuaDJ7XG4gIHRleHQtdHJhbnNmb3JtOiBjYXBpdGFsaXplO1xufVxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA2MDBweCkge1xuXG4gIGlmcmFtZXtcbiAgICB3aWR0aDogMTAwJTtcbiAgfVxuXG59XG4iXX0= */");
+/* harmony default export */ __webpack_exports__["default"] = ("/* styling for movie details page */\nmain{\n  padding-bottom: 1em;\n}\nh1{\n\n  margin-bottom: 0px;\n}\niframe{\n  display: block;\n  height: 30em;\n  width: 60%;\n  margin: auto;\n}\n#movie-status{\n  color: gray;\n  text-transform: capitalize;\n  padding: 0px;\n  margin-bottom: 1em;\n}\nh2{\n  text-transform: capitalize;\n}\n@media only screen and (max-width: 600px) {\n\n  iframe{\n    width: 100%;\n  }\n\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1vdmllLWRldGFpbC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLG1DQUFtQztBQUNuQztFQUNFLG1CQUFtQjtBQUNyQjtBQUNBOztFQUVFLGtCQUFrQjtBQUNwQjtBQUNBO0VBQ0UsY0FBYztFQUNkLFlBQVk7RUFDWixVQUFVO0VBQ1YsWUFBWTtBQUNkO0FBQ0E7RUFDRSxXQUFXO0VBQ1gsMEJBQTBCO0VBQzFCLFlBQVk7RUFDWixrQkFBa0I7QUFDcEI7QUFFQTtFQUNFLDBCQUEwQjtBQUM1QjtBQUNBOztFQUVFO0lBQ0UsV0FBVztFQUNiOztBQUVGIiwiZmlsZSI6Im1vdmllLWRldGFpbC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyogc3R5bGluZyBmb3IgbW92aWUgZGV0YWlscyBwYWdlICovXG5tYWlue1xuICBwYWRkaW5nLWJvdHRvbTogMWVtO1xufVxuaDF7XG5cbiAgbWFyZ2luLWJvdHRvbTogMHB4O1xufVxuaWZyYW1le1xuICBkaXNwbGF5OiBibG9jaztcbiAgaGVpZ2h0OiAzMGVtO1xuICB3aWR0aDogNjAlO1xuICBtYXJnaW46IGF1dG87XG59XG4jbW92aWUtc3RhdHVze1xuICBjb2xvcjogZ3JheTtcbiAgdGV4dC10cmFuc2Zvcm06IGNhcGl0YWxpemU7XG4gIHBhZGRpbmc6IDBweDtcbiAgbWFyZ2luLWJvdHRvbTogMWVtO1xufVxuXG5oMntcbiAgdGV4dC10cmFuc2Zvcm06IGNhcGl0YWxpemU7XG59XG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDYwMHB4KSB7XG5cbiAgaWZyYW1le1xuICAgIHdpZHRoOiAxMDAlO1xuICB9XG5cbn1cbiJdfQ== */");
 
 /***/ }),
 
@@ -101,7 +101,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<main class=\"container\">\n  <a (click)= \"goBack()\" class=\"return-link\"> new search</a>\n  <h1>Top 10 trending movies</h1>\n\n  <ul>\n    <li *ngFor=\"let movie of movies\">\n    <a routerLink=\"/movie-detail/{{movie.movie.ids.trakt}}\">\n        {{movie.movie.title}}\n    </a>\n    </li>\n  </ul>\n  <p *ngIf=\"!movies?.length > 0\" class=\"no-result\"> No result found !</p>\n</main>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<main class=\"container\">\n  <a (click)= \"goBack()\" class=\"return-link\"> new search</a>\n  <h1>Top 10 trending movies</h1>\n\n  \n\n  <ul>\n    <li *ngFor=\"let movie of movies\">\n    <a routerLink=\"/movie-detail/{{movie.movie.ids.trakt}}\">\n        {{movie.movie.title}}\n    </a>\n    </li>\n  </ul>\n  <p *ngIf=\"!movies?.length > 0\" class=\"no-result\"> No result found !</p>\n</main>\n");
 
 /***/ }),
 
@@ -162,7 +162,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n<main *ngIf=\"movie\" class=\"container\" id>\n  <a (click)= \"goBack()\" class=\"return-link\"> return to list</a>\n<h1>Movie: {{movie.title}}</h1>\n<p id=\"movie-status\">{{movie.status}} - {{movie.year}}</p>\n<iframe\n[src] =\"(movie.trailer).replace('watch?v=','embed/') | safeUrl\" allow=\"fullscreen\"></iframe>\n\n<h2>Synopsis</h2>\n\n{{movie.overview}}\n</main>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("\n<main *ngIf=\"movie\" class=\"container\" id>\n  <a (click)= \"goBack()\" class=\"return-link\"> return to list</a>\n<h1>Movie: {{movie.title}}</h1>\n<p id=\"movie-status\">{{movie.status}} - {{movie.year}}</p>\n<iframe\n[src] =\"(movie.trailer).replace('http','https').replace('watch?v=','embed/') | safeUrl\" allow=\"fullscreen\"></iframe>\n\n<h2>Synopsis</h2>\n\n{{movie.overview}}\n</main>\n");
 
 /***/ }),
 
@@ -233,7 +233,7 @@ AppModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\nmain{\n  background-color: #e4efe7;\n  padding-bottom: 1em;\n\n}\n\nul li a{\n  color: #687980\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1vdmllcy1saXN0LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBO0VBQ0UseUJBQXlCO0VBQ3pCLG1CQUFtQjs7QUFFckI7O0FBRUE7RUFDRTtBQUNGIiwiZmlsZSI6Im1vdmllcy1saXN0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcbm1haW57XG4gIGJhY2tncm91bmQtY29sb3I6ICNlNGVmZTc7XG4gIHBhZGRpbmctYm90dG9tOiAxZW07XG5cbn1cblxudWwgbGkgYXtcbiAgY29sb3I6ICM2ODc5ODBcbn1cbiJdfQ== */");
+/* harmony default export */ __webpack_exports__["default"] = ("\nmain{\n  padding-bottom: 1em;\n\n}\n\nul li a{\n  color: #687980\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1vdmllcy1saXN0LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBO0VBQ0UsbUJBQW1COztBQUVyQjs7QUFFQTtFQUNFO0FBQ0YiLCJmaWxlIjoibW92aWVzLWxpc3QuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIlxubWFpbntcbiAgcGFkZGluZy1ib3R0b206IDFlbTtcblxufVxuXG51bCBsaSBhe1xuICBjb2xvcjogIzY4Nzk4MFxufVxuIl19 */");
 
 /***/ }),
 
@@ -337,7 +337,7 @@ MoviesSearchFormComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorat
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("form{\n  width: 40%;\n  margin: 1em auto;\n\n}\nmain{\n  background-color: #e4efe7;\n  padding-bottom: 1em;\n}\n@media only screen and (max-width: 500px) {\n  form{\n    width: 100%;\n    margin: 1em auto;\n\n  }\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1vdmllcy1zZWFyY2gtZm9ybS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsVUFBVTtFQUNWLGdCQUFnQjs7QUFFbEI7QUFDQTtFQUNFLHlCQUF5QjtFQUN6QixtQkFBbUI7QUFDckI7QUFFQTtFQUNFO0lBQ0UsV0FBVztJQUNYLGdCQUFnQjs7RUFFbEI7QUFDRiIsImZpbGUiOiJtb3ZpZXMtc2VhcmNoLWZvcm0uY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImZvcm17XG4gIHdpZHRoOiA0MCU7XG4gIG1hcmdpbjogMWVtIGF1dG87XG5cbn1cbm1haW57XG4gIGJhY2tncm91bmQtY29sb3I6ICNlNGVmZTc7XG4gIHBhZGRpbmctYm90dG9tOiAxZW07XG59XG5cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogNTAwcHgpIHtcbiAgZm9ybXtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBtYXJnaW46IDFlbSBhdXRvO1xuXG4gIH1cbn1cbiJdfQ== */");
+/* harmony default export */ __webpack_exports__["default"] = ("form{\n  width: 40%;\n  margin: 1em auto;\n\n}\nmain{\n  padding-bottom: 1em;\n}\n@media only screen and (max-width: 500px) {\n  form{\n    width: 100%;\n    margin: 1em auto;\n\n  }\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1vdmllcy1zZWFyY2gtZm9ybS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsVUFBVTtFQUNWLGdCQUFnQjs7QUFFbEI7QUFDQTtFQUNFLG1CQUFtQjtBQUNyQjtBQUVBO0VBQ0U7SUFDRSxXQUFXO0lBQ1gsZ0JBQWdCOztFQUVsQjtBQUNGIiwiZmlsZSI6Im1vdmllcy1zZWFyY2gtZm9ybS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiZm9ybXtcbiAgd2lkdGg6IDQwJTtcbiAgbWFyZ2luOiAxZW0gYXV0bztcblxufVxubWFpbntcbiAgcGFkZGluZy1ib3R0b206IDFlbTtcbn1cblxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA1MDBweCkge1xuICBmb3Jte1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIG1hcmdpbjogMWVtIGF1dG87XG5cbiAgfVxufVxuIl19 */");
 
 /***/ }),
 
@@ -370,6 +370,7 @@ let MoviesListComponent = class MoviesListComponent {
         this.route = route;
         this.moviesService = moviesService;
         this.location = location;
+        this.year = "";
         this.filter = [];
     }
     ngOnInit() {
@@ -389,6 +390,7 @@ let MoviesListComponent = class MoviesListComponent {
             }
             if (params['year']) {
                 this.filter.push('years=' + params['year']);
+                this.year = params['year'];
             }
             if (params['language']) {
                 this.filter.push('languages=' + params['language']);
@@ -430,7 +432,7 @@ MoviesListComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<main class=\"container\">\n  <h1>Trending movies</h1>\n  <p>Wondering what to watch? let's help you find movies that match  with your expectations.</p>\n  <form (ngSubmit)=\"onSubmit()\">\n    <div class=\"form-group\">\n      <label for=\"genre\">Genre:</label>\n      <select class=\"form-control\"  id=\"genre\" name=\"genre\"\n      [(ngModel)]=\"genre\" [ngModelOptions]=\"{standalone: true}\">\n        <option value=\"\">select a genre</option>\n        <option *ngFor=\"let g of genres\" [value]=\"g.slug\">{{g.name}}</option>\n      </select>\n    </div>\n    <div class=\"form-group\">\n      <label for=\"year\">Year:</label>\n      <select class=\"form-control\"  id=\"year\" name=\"year\"\n      [(ngModel)]=\"year\" [ngModelOptions]=\"{standalone: true}\">\n        <option value=\"\" selected>select a year</option>\n        <option *ngFor=\"let y of years\" [value]=\"y\">{{y}}</option>\n      </select>\n    </div>\n    <div class=\"form-group\">\n      <label for=\"language\">Language:</label>\n      <select class=\"form-control\"  id=\"language\" name=\"language\"\n      [(ngModel)]=\"language\" [ngModelOptions]=\"{standalone: true}\">\n        <option value=\"\">select a language</option>\n        <option *ngFor=\"let l of languages\" [value]=\"l.code\">{{l.name}}</option>\n      </select>\n    </div>\n    <div class=\"form-group\">\n      <label for=\"country\">Country:</label>\n      <select class=\"form-control\"  id=\"country\" country\n      [(ngModel)]=\"country\" [ngModelOptions]=\"{standalone: true}\">\n        <option value=\"\">select a country</option>\n        <option *ngFor=\"let c of countries\" [value]=\"c.code\">{{c.name}}</option>\n      </select>\n    </div>\n    <button type=\"submit\" class=\"btn btn-success\">Search</button>\n  </form>\n</main>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<main class=\"container\">\n  <h1>Trending movies Search </h1>\n  <p>Wondering what to watch? let's help you find movies that match  with your expectations.</p>\n  <form (ngSubmit)=\"onSubmit()\">\n    <div class=\"form-group\">\n      <label for=\"genre\">Genre:</label>\n      <select class=\"form-control\"  id=\"genre\" name=\"genre\"\n      [(ngModel)]=\"genre\" [ngModelOptions]=\"{standalone: true}\">\n        <option value=\"\">select a genre</option>\n        <option *ngFor=\"let g of genres\" [value]=\"g.slug\">{{g.name}}</option>\n      </select>\n    </div>\n    <div class=\"form-group\">\n      <label for=\"year\">Year:</label>\n      <select class=\"form-control\"  id=\"year\" name=\"year\"\n      [(ngModel)]=\"year\" [ngModelOptions]=\"{standalone: true}\">\n        <option value=\"\" selected>select a year</option>\n        <option *ngFor=\"let y of years\" [value]=\"y\">{{y}}</option>\n      </select>\n    </div>\n    <div class=\"form-group\">\n      <label for=\"language\">Language:</label>\n      <select class=\"form-control\"  id=\"language\" name=\"language\"\n      [(ngModel)]=\"language\" [ngModelOptions]=\"{standalone: true}\">\n        <option value=\"\">select a language</option>\n        <option *ngFor=\"let l of languages\" [value]=\"l.code\">{{l.name}}</option>\n      </select>\n    </div>\n    <div class=\"form-group\">\n      <label for=\"country\">Country:</label>\n      <select class=\"form-control\"  id=\"country\" country\n      [(ngModel)]=\"country\" [ngModelOptions]=\"{standalone: true}\">\n        <option value=\"\">select a country</option>\n        <option *ngFor=\"let c of countries\" [value]=\"c.code\">{{c.name}}</option>\n      </select>\n    </div>\n    <button type=\"submit\" class=\"btn btn-success\">Search</button>\n  </form>\n</main>\n");
 
 /***/ }),
 
@@ -700,4 +702,4 @@ webpackEmptyAsyncContext.id = "zn8P";
 /***/ })
 
 },[[0,"runtime","vendor"]]]);
-//# sourceMappingURL=main.5e8f20998632274e492d.js.map
+//# sourceMappingURL=main.36383a85fd17c2e01513.js.map

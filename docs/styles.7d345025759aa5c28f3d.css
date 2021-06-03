@@ -1,0 +1,44 @@
+@import url(https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css);
+
+/* You can add global styles to this file, and also import other style files */
+a.return-link{
+  display: inline-block;
+  margin-top: 1em;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+main, footer{
+  max-width: 800px;
+  border-radius: 5px;
+}
+main{
+  background-color: #f8f5f1;
+}
+footer{
+  text-align: center;
+  background-color: #f3f4ed;
+  padding-top: 10px;
+  border-top: 1px solid gray;
+}
+h1{
+  text-transform: uppercase;
+}
+.no-result{
+  color: #ff5200;
+}
+@media only screen and (max-width: 500px) {
+  main{
+  font-size: 12px;
+
+  }
+
+  h1{
+  font-size: 1.6em;
+
+  }
+
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlcy5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBLDJFQUEyRTtBQUQzRSw4RUFBOEU7QUFFOUU7RUFDRSxxQkFBcUI7RUFDckIsZUFBZTtFQUNmLDBCQUEwQjtFQUMxQixlQUFlO0FBQ2pCO0FBQ0E7RUFDRSxnQkFBZ0I7RUFDaEIsa0JBQWtCO0FBQ3BCO0FBQ0E7RUFDRSx5QkFBeUI7QUFDM0I7QUFDQTtFQUNFLGtCQUFrQjtFQUNsQix5QkFBeUI7RUFDekIsaUJBQWlCO0VBQ2pCLDBCQUEwQjtBQUM1QjtBQUNBO0VBQ0UseUJBQXlCO0FBQzNCO0FBQ0E7RUFDRSxjQUFjO0FBQ2hCO0FBRUE7RUFDRTtFQUNBLGVBQWU7O0VBRWY7O0VBRUE7RUFDQSxnQkFBZ0I7O0VBRWhCOztBQUVGIiwiZmlsZSI6InN0eWxlcy5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKiBZb3UgY2FuIGFkZCBnbG9iYWwgc3R5bGVzIHRvIHRoaXMgZmlsZSwgYW5kIGFsc28gaW1wb3J0IG90aGVyIHN0eWxlIGZpbGVzICovXG5AaW1wb3J0IHVybCgnaHR0cHM6Ly91bnBrZy5jb20vYm9vdHN0cmFwQDMuMy43L2Rpc3QvY3NzL2Jvb3RzdHJhcC5taW4uY3NzJyk7XG5hLnJldHVybi1saW5re1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIG1hcmdpbi10b3A6IDFlbTtcbiAgdGV4dC10cmFuc2Zvcm06IGNhcGl0YWxpemU7XG4gIGN1cnNvcjogcG9pbnRlcjtcbn1cbm1haW4sIGZvb3RlcntcbiAgbWF4LXdpZHRoOiA4MDBweDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xufVxubWFpbntcbiAgYmFja2dyb3VuZC1jb2xvcjogI2Y4ZjVmMTtcbn1cbmZvb3RlcntcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjNmNGVkO1xuICBwYWRkaW5nLXRvcDogMTBweDtcbiAgYm9yZGVyLXRvcDogMXB4IHNvbGlkIGdyYXk7XG59XG5oMXtcbiAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcbn1cbi5uby1yZXN1bHR7XG4gIGNvbG9yOiAjZmY1MjAwO1xufVxuXG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDUwMHB4KSB7XG4gIG1haW57XG4gIGZvbnQtc2l6ZTogMTJweDtcblxuICB9XG5cbiAgaDF7XG4gIGZvbnQtc2l6ZTogMS42ZW07XG5cbiAgfVxuXG59XG4iXX0= */
+
+/*# sourceMappingURL=styles.7d345025759aa5c28f3d.css.map*/

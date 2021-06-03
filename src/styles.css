@@ -6,10 +6,16 @@ a.return-link{
   text-transform: capitalize;
   cursor: pointer;
 }
-
+main, footer{
+  max-width: 800px;
+  border-radius: 5px;
+}
+main{
+  background-color: #f8f5f1;
+}
 footer{
   text-align: center;
-  background-color: #e4efe7;
+  background-color: #f3f4ed;
   padding-top: 10px;
   border-top: 1px solid gray;
 }
