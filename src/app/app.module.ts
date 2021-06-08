@@ -9,6 +9,7 @@ import { MoviesListComponent } from './movies-list/movies-list.component';
 import { SafeUrlPipe } from './safe-url.pipe';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 import { ShowsSearchFormComponent } from './shows-search-form/shows-search-form.component';
+import { TvShowsListComponent } from './tv-shows-list/tv-shows-list.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { ShowsSearchFormComponent } from './shows-search-form/shows-search-form.
     MoviesListComponent,
     SafeUrlPipe,
     MovieDetailComponent,
-    ShowsSearchFormComponent
+    ShowsSearchFormComponent,
+    TvShowsListComponent
   ],
   imports: [
     BrowserModule,
