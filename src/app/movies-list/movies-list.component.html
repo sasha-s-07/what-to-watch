@@ -1,14 +1,17 @@
-<main class="container">
+<main class="container" id="main-content">
   <a (click)= "goBack()" class="return-link"> new search</a>
   <h1>Top 10 trending movies</h1>
 
 
-
+  <span id="oo"></span>
   <ul *ngIf="movies?.length > 0; else noResult">
-    <li *ngFor="let movie of movies">
-    <a routerLink="/movie-detail/{{movie.movie.ids.trakt}}">
-        {{movie.movie.title}}
-    </a>
+    <li *ngFor="let movie of movies; let i=index">
+      <figure>
+        <a routerLink="/movie-detail/{{movie.movie.ids.trakt}}">
+          <img src="{{moviesImages[i]}}" alt="{{movie.movie.title}} poster">
+        </a>
+        <figcaption>{{movie.movie.title}}</figcaption>
+      </figure>
     </li>
   </ul>
   <ng-template  #noResult>

@@ -7,3 +7,8 @@ main{
 ul li a{
   color: #687980
 }
+
+ul li {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}

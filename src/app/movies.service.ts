@@ -18,6 +18,8 @@ export class MoviesService {
       'trakt-api-key' : 'f553707c24635b6b454af5990ed3f88ed50dbd9cc5ba16992089fa9e0a4274c0'
     })
   };
+ image_api_key : string = "89a4c80912c77b3a55862d978346c308";
+ image_base_url : string = "https://api.themoviedb.org/3/";
   constructor(private http: HttpClient) { }
 
   /*
@@ -98,6 +100,21 @@ getMovie(id: string){
             catchError(this.handleError('getMovie', {}))
           );
 
+}
+
+/*
+ * PURPOSE : retrieve filename representing a movie poster
+ *  PARAMS : id: string - id of the movie
+ * RETURNS :  -
+ *   NOTES :
+ */
+getMovieImages(id: string){
+  return this.http.get(this.image_base_url + 'movie/' + id +'/images?api_key=' + this.image_api_key)
+          .pipe(
+            retry(2),
+            tap(_ => this.log('fetched movie images')),
+            catchError(this.handleError('getMovieImage', {}))
+          );
 }
 
   /**
