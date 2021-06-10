@@ -15,6 +15,7 @@ export class MoviesListComponent implements OnInit {
   movies: any;
   moviesImages : string [] = [];
   numPerCol : number = 4;
+  numRows: number = 0;
   constructor(private route: ActivatedRoute, private moviesService: MoviesService,private location: Location) { }
 
   ngOnInit(): void {
@@ -61,6 +62,7 @@ export class MoviesListComponent implements OnInit {
   }
 
   getMovieImages():void{
+    this.numRows = Math.ceil(this.movies.length/this.numPerCol);
     for (let i = 0;i < this.movies.length;i++) {
       this.moviesService.getMovieImages(String(this.movies[i].movie.ids.tmdb))
       .subscribe((images: any) => {

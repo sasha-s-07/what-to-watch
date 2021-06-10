@@ -11,4 +11,21 @@ ul li a{
 ul li {
   margin-top: 2em;
   margin-bottom: 0.5em;
+  list-style-type: none;
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+}
+
+img{
+  height: 300px;
+}
+figure{
+  height: 400px;
+}
+
+figcaption{
+  text-transform: capitalize;
+  font-size: 1.3em;
+  margin-top: 0.6em;
 }
