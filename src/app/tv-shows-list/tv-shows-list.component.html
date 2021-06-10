@@ -1,0 +1,19 @@
+<main class="container">
+  <a (click)= "goBack()" class="return-link"> new search</a>
+  <h1>Top 10 trending tv shows</h1>
+
+
+
+  <ul *ngIf="tvshows?.length > 0; else noResult">
+    <li *ngFor="let tvshow of tvshows">
+      <a routerLink="/tvshow-detail/{{tvshow.tvshow.ids.trakt}}">
+        {{tvshow.tvshow.title}}
+      </a>
+    </li>
+  </ul>
+  <ng-template  #noResult>
+    <div class="no-result">
+      No result found !
+    </div>
+  </ng-template>
+</main>
