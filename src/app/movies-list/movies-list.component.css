@@ -7,7 +7,9 @@ main{
 ul li a{
   color: #687980
 }
-
+ul{
+  padding: 0px;
+}
 ul li {
   margin-top: 2em;
   margin-bottom: 0.5em;
@@ -15,9 +17,11 @@ ul li {
   display: inline-block;
   width: 50%;
   vertical-align: top;
+  padding: 0em 1em;
 }
 
 img{
+  display: block;
   height: 300px;
 }
 figure{
@@ -28,4 +32,20 @@ figcaption{
   text-transform: capitalize;
   font-size: 1.3em;
   margin-top: 0.6em;
+}
+
+@media screen and (max-width: 650px) {
+
+  ul li {
+    width: 100%
+  }
+
+  img{
+    margin: auto;
+  }
+
+  figcaption{
+    text-align: center;
+  }
+
 }
