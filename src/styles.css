@@ -5,23 +5,14 @@ a.return-link{
   margin-top: 1em;
   text-transform: capitalize;
   cursor: pointer;
-}
-main, footer{
+}/*
+main{
   max-width: 800px;
-  border-radius: 5px;
 }
 main{
   background-color: #f8f5f1;
 }
-footer{
-  text-align: center;
-  background-color: #f3f4ed;
-  padding-top: 10px;
-  border-top: 1px solid gray;
-}
-h1{
-  text-transform: uppercase;
-}
+*/
 .no-result{
   color: #ff5200;
 }

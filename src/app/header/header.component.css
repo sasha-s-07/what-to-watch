@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.navbar {
+  border-radius:0;
+  margin: 0;
+}
+#nav-item li a:link,
+#nav-item li a:visited,
+#logo:link,
+#logo:visited {
+  color: #fff;
+}
+#nav-item li a:hover,
+#nav-item li a:active,
+#logo:hover,
+#logo:active {
+  color: #9d9d9d;
+}
+#logo {
+  font-family: 'Pacifico', cursive;
+}

@@ -12,6 +12,9 @@ import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ShowsSearchFormComponent } from './shows-search-form/shows-search-form.component';
 import { TvShowsListComponent } from './tv-shows-list/tv-shows-list.component';
+import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -22,7 +25,10 @@ import { TvShowsListComponent } from './tv-shows-list/tv-shows-list.component';
     SafeUrlPipe,
     MovieDetailComponent,
     ShowsSearchFormComponent,
-    TvShowsListComponent
+    TvShowsListComponent,
+    HomeComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

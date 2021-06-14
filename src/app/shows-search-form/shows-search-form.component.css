@@ -1,0 +1,34 @@
+.search-form {
+  width: 100%;
+  border-radius: 5px;
+  padding-top: 20px; 
+}
+.search-form h2 {
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 80%;
+  margin: 0 auto;
+}
+.search-form label {
+  font-weight: 300;
+}
+form{
+  width: 80%;
+  margin: 0 auto;
+}
+.search-btn {
+  width: 100%;
+  color: #fff;
+  background-color: #e85d04;
+}
+.search-btn:hover {
+  background-color: #dc2f02;
+}
+@media only screen and (max-width: 500px) {
+  form{
+    width: 100%;
+  }
+  .search-form {
+    padding-top: 5px; 
+  }
+}

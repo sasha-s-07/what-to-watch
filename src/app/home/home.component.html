@@ -1,0 +1,23 @@
+<app-header></app-header>
+
+<main id="home">
+  <div class="home-bg"></div>
+  <div class="home-main">
+    <div class="title">
+      <h2>Wondering what to watch?</h2>
+      <p>Let's help you find movies/shows that match with your expectations.</p>
+    </div>
+    <button id="movie-btn" (click)="onMovieClick()" [ngClass]="movie ? 'active' : ''">Movie</button>
+    <button id="show-btn" (click)="onShowClick()" [ngClass]="show ? 'active' : ''">Show</button>
+  
+    <div *ngIf="movie" class="output">
+      <app-movies-search-form></app-movies-search-form>
+    </div>
+  
+    <div *ngIf="show" class="output">
+      <app-shows-search-form></app-shows-search-form>
+    </div>
+  </div>  
+</main>
+
+<app-footer></app-footer>

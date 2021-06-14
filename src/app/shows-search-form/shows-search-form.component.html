@@ -1,5 +1,5 @@
-<section class="container">
-  <h2>Trending TV shows</h2>
+<section class="container search-form">
+  <h2>Trending shows</h2>
   <form #showsSearchForm="ngForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="show-genre" class="form-label">Genre:</label>
@@ -33,6 +33,6 @@
       </select>
     </div>
     
-    <button type="submit" class="btn btn-primary">Search</button>
+    <button type="submit" class="btn search-btn">Search</button>
   </form>
 </section>
