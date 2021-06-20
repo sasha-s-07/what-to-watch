@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
-import { catchError, map, tap } from 'rxjs/operators';
+import {catchError, map, retry, tap} from 'rxjs/operators';
 
 import { Country } from './country';
 import { Language } from "./language";
@@ -18,7 +18,7 @@ export class ShowsService {
   constructor(private http: HttpClient,) { }
 
   httpOptions = {
-    headers: new HttpHeaders({ 
+    headers: new HttpHeaders({
       'Content-Type': 'application/json',
       'trakt-api-version': '2',
       'trakt-api-key': '13ea95c9693cceb363b1fef70b372ec06213cb0d144ded8d7457b8ed055798ac'
@@ -55,8 +55,8 @@ export class ShowsService {
     );
   }
 
-  //Get trending shows based on user's choice of genre, year, language, or country 
-  //Returns a list of trending shows  
+  //Get trending shows based on user's choice of genre, year, language, or country
+  //Returns a list of trending shows
   getTrendingShows(filter:string[]) {
     //I was trying to get values from object but it didn't work
     //var queryString = Object.keys(filter).map(key => key + '=' + filter.genre).join('&');
@@ -75,7 +75,16 @@ export class ShowsService {
       catchError(this.handleError('getTrendingShows', []))
     );
   }
+  getShow(id: string){
 
+    return this.http.get('https://api.trakt.tv/shows/' + id +'?extended=full', this.httpOptions)
+      .pipe(
+        retry(2),
+        tap(_ => this.log('fetched show')),
+        catchError(this.handleError('getShow', {}))
+      );
+
+  }
   /**
  * Handle Http operation that failed.
  * Let the app continue.
@@ -84,13 +93,13 @@ export class ShowsService {
  */
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
-  
+
       // TODO: send the error to remote logging infrastructure
       console.error(error); // log to console instead
-  
+
       // TODO: better job of transforming error for user consumption
       this.log(`${operation} failed: ${error.message}`);
-  
+
       // Let the app keep running by returning an empty result.
       return of(result as T);
     };

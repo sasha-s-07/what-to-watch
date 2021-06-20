@@ -1,0 +1,30 @@
+main{
+  padding-bottom: 1em;
+}
+h1{
+
+  margin-bottom: 0px;
+}
+iframe{
+  display: block;
+  height: 30em;
+  width: 60%;
+  margin: auto;
+}
+#movie-status{
+  color: gray;
+  text-transform: capitalize;
+  padding: 0px;
+  margin-bottom: 1em;
+}
+
+h2{
+  text-transform: capitalize;
+}
+@media only screen and (max-width: 600px) {
+
+  iframe{
+    width: 100%;
+  }
+
+}

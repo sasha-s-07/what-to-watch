@@ -15,6 +15,7 @@ import { TvShowsListComponent } from './tv-shows-list/tv-shows-list.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { TvShowsDetailComponent } from './tv-shows-detail/tv-shows-detail.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { FooterComponent } from './footer/footer.component';
     TvShowsListComponent,
     HomeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    TvShowsDetailComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,20 @@
+<app-header></app-header>
+
+<main *ngIf="show" class="container" id>
+  <a (click)= "goBack()" class="return-link"> return to list</a>
+  <h1>TV Show: {{show.title}}</h1>
+  <p class="tv-status">{{show.status}} - {{show.year}}</p>
+  <p class="tv-status">Network:{{show.network}}</p>
+
+  <ng-template #elseBlock>
+    <div class="no-result">
+      No trailer available!
+    </div>
+  </ng-template>
+
+  <h2>Synopsis</h2>
+
+  {{show.overview}}
+</main>
+
+<app-footer></app-footer>

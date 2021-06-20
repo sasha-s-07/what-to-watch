@@ -1,3 +1,4 @@
+<app-header></app-header>
 <main class="container">
   <a (click)= "goBack()" class="return-link"> new search</a>
   <h1>Top 10 trending tv shows</h1>
@@ -6,7 +7,7 @@
 
   <ul *ngIf="tvshows?.length > 0; else noResult">
     <li *ngFor="let tvshow of tvshows">
-      <a routerLink="/tvshow-detail/{{tvshow.show.ids.trakt}}">
+      <a routerLink="/tv-shows-detail/{{tvshow.show.ids.trakt}}">
         {{tvshow.show.title}}
       </a>
     </li>
@@ -17,3 +18,4 @@
     </div>
   </ng-template>
 </main>
+<app-footer></app-footer>
