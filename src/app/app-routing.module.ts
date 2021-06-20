@@ -6,6 +6,7 @@ import { MoviesSearchFormComponent } from './movies-search-form/movies-search-fo
 import { MoviesListComponent } from './movies-list/movies-list.component';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 import { ShowsSearchFormComponent } from './shows-search-form/shows-search-form.component';
+import {TvShowsListComponent} from "./tv-shows-list/tv-shows-list.component";
 
 const routes: Routes = [
   { path: 'movies-search', component: MoviesSearchFormComponent},
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'home', component:HomeComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'shows-search', component: ShowsSearchFormComponent },
+  { path:'tv-shows-list', component: TvShowsListComponent}
 ];
 
 @NgModule({

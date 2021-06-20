@@ -6,8 +6,8 @@
 
   <ul *ngIf="tvshows?.length > 0; else noResult">
     <li *ngFor="let tvshow of tvshows">
-      <a routerLink="/tvshow-detail/{{tvshow.tvshow.ids.trakt}}">
-        {{tvshow.tvshow.title}}
+      <a routerLink="/tvshow-detail/{{tvshow.show.ids.trakt}}">
+        {{tvshow.show.title}}
       </a>
     </li>
   </ul>

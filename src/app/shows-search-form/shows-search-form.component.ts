@@ -22,7 +22,7 @@ export class ShowsSearchFormComponent implements OnInit {
   //Data will be retrieved from the form submission
   //userModel: Filter = {genre: "", year: "", language: "", country: ""}; //Object
   filter: Filter = {};
-  genre?: string = ""; 
+  genre?: string = "";
   year?: string = "";
   language?: string = "";
   country?: string = "";
@@ -43,7 +43,7 @@ export class ShowsSearchFormComponent implements OnInit {
         data => console.log("Success", data),
         error => console.log("Error", error)
         );
-    */      
+    */
     this.filter = {};// clear the filter
     //console.log(this.genre,this.language,this.country,this.year);
     // add filter params
@@ -61,7 +61,7 @@ export class ShowsSearchFormComponent implements OnInit {
     }
 
     console.log(this.filter);
-    //this.router.navigate(['/movies-list'], { queryParams: this.filter });
+    this.router.navigate(['/tv-shows-list'], { queryParams: this.filter });
   }
 
   getShowsCountries() : void {
