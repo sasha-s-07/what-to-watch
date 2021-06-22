@@ -1,6 +1,12 @@
 
+h1{
+ font-size: 2em;
+  
+  text-transform: capitalize;
+}
 main{
   padding-bottom: 1em;
+  background-color: white;
 
 }
 
@@ -23,6 +29,7 @@ ul li {
 img{
   display: block;
   height: 300px;
+  margin: auto;
 }
 figure{
   height: 400px;
@@ -32,6 +39,7 @@ figcaption{
   text-transform: capitalize;
   font-size: 1.3em;
   margin-top: 0.6em;
+  text-align: center;
 }
 
 @media screen and (max-width: 650px) {

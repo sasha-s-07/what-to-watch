@@ -1,10 +1,15 @@
 /* styling for movie details page */
 main{
   padding-bottom: 1em;
+  background-color: white
 }
 h1{
-
+ font-size: 2em;
   margin-bottom: 0px;
+  text-transform: capitalize;
+}
+#synopsis{
+  margin-top: 40px;
 }
 iframe{
   display: block;

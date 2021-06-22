@@ -2,17 +2,20 @@
 @import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
 a.return-link{
   display: inline-block;
-  margin-top: 1em;
+  margin: 1em 0em 2em 0em;
   text-transform: capitalize;
   cursor: pointer;
-}/*
-main{
-  max-width: 800px;
+  font-size: 1.2em;
 }
-main{
-  background-color: #f8f5f1;
+.content-wrapper{
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
 }
-*/
+
+
 .no-result{
   color: #ff5200;
 }
