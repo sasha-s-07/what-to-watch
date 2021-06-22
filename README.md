@@ -11,4 +11,4 @@ as well as its trailer.
 
 ## Technical considerations
 
-Languages, Technologies and tools used to build this application are: HTML5, CSS3, JavaScript, Angular, Bootstrap and trakt API.
+Languages, Technologies and tools used to build this application are: HTML5, CSS3, JavaScript, Angular, Bootstrap and trakt and tmdb APIs.
