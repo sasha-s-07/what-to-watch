@@ -7,7 +7,75 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/franckcheuzem/angular-projects/angular-traktapi-test/src/main.ts */"zUnb");
+module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/project-code-and-learning-documentations-team-7/src/main.ts */"zUnb");
+
+
+/***/ }),
+
+/***/ "1XXE":
+/*!*********************************************!*\
+  !*** ./src/app/footer/footer.component.css ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("footer{\n  text-align: center;\n  background-color: #222;\n  padding-top: 10px;\n  /*border-top: 1px solid gray;*/\n  color: #fff;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZvb3Rlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usa0JBQWtCO0VBQ2xCLHNCQUFzQjtFQUN0QixpQkFBaUI7RUFDakIsOEJBQThCO0VBQzlCLFdBQVc7QUFDYiIsImZpbGUiOiJmb290ZXIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImZvb3RlcntcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjIyO1xuICBwYWRkaW5nLXRvcDogMTBweDtcbiAgLypib3JkZXItdG9wOiAxcHggc29saWQgZ3JheTsqL1xuICBjb2xvcjogI2ZmZjtcbn0iXX0= */");
+
+/***/ }),
+
+/***/ "9vUh":
+/*!****************************************!*\
+  !*** ./src/app/home/home.component.ts ***!
+  \****************************************/
+/*! exports provided: HomeComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "mrSG");
+/* harmony import */ var _raw_loader_home_component_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! raw-loader!./home.component.html */ "Gd4t");
+/* harmony import */ var _home_component_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home.component.css */ "RV7M");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "fXoL");
+
+
+
+
+let HomeComponent = class HomeComponent {
+    constructor() {
+        this.movie = true;
+        this.show = false;
+    }
+    ngOnInit() {
+    }
+    onMovieClick() {
+        if (this.show === true) {
+            this.show = false;
+        }
+        //toggle 
+        //this.movie = !this.movie;
+        this.movie = true;
+    }
+    onShowClick() {
+        if (this.movie === true) {
+            this.movie = false;
+        }
+        //toggle
+        //this.show = !this.show;
+        this.show = true;
+    }
+};
+HomeComponent.ctorParameters = () => [];
+HomeComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({
+        selector: 'app-home',
+        template: _raw_loader_home_component_html__WEBPACK_IMPORTED_MODULE_1__["default"],
+        styles: [_home_component_css__WEBPACK_IMPORTED_MODULE_2__["default"]]
+    })
+], HomeComponent);
+
 
 
 /***/ }),
@@ -39,6 +107,19 @@ const environment = {
     production: true
 };
 
+
+/***/ }),
+
+/***/ "DN7M":
+/*!*********************************************!*\
+  !*** ./src/app/header/header.component.css ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');\n\n.navbar {\n  border-radius:0;\n  margin: 0;\n}\n\n#nav-item li a:link,\n#nav-item li a:visited,\n#logo:link,\n#logo:visited {\n  color: #fff;\n}\n\n#nav-item li a:hover,\n#nav-item li a:active,\n#logo:hover,\n#logo:active {\n  color: #9d9d9d;\n}\n\n#logo {\n  font-family: 'Pacifico', cursive;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhlYWRlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLDZFQUE2RTs7QUFFN0U7RUFDRSxlQUFlO0VBQ2YsU0FBUztBQUNYOztBQUNBOzs7O0VBSUUsV0FBVztBQUNiOztBQUNBOzs7O0VBSUUsY0FBYztBQUNoQjs7QUFDQTtFQUNFLGdDQUFnQztBQUNsQyIsImZpbGUiOiJoZWFkZXIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgdXJsKCdodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2NzczI/ZmFtaWx5PVBhY2lmaWNvJmRpc3BsYXk9c3dhcCcpO1xuXG4ubmF2YmFyIHtcbiAgYm9yZGVyLXJhZGl1czowO1xuICBtYXJnaW46IDA7XG59XG4jbmF2LWl0ZW0gbGkgYTpsaW5rLFxuI25hdi1pdGVtIGxpIGE6dmlzaXRlZCxcbiNsb2dvOmxpbmssXG4jbG9nbzp2aXNpdGVkIHtcbiAgY29sb3I6ICNmZmY7XG59XG4jbmF2LWl0ZW0gbGkgYTpob3ZlcixcbiNuYXYtaXRlbSBsaSBhOmFjdGl2ZSxcbiNsb2dvOmhvdmVyLFxuI2xvZ286YWN0aXZlIHtcbiAgY29sb3I6ICM5ZDlkOWQ7XG59XG4jbG9nbyB7XG4gIGZvbnQtZmFtaWx5OiAnUGFjaWZpY28nLCBjdXJzaXZlO1xufSJdfQ== */");
 
 /***/ }),
 
@@ -124,6 +205,32 @@ TvShowsListComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])(
 
 /***/ }),
 
+/***/ "Gd4t":
+/*!********************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/home/home.component.html ***!
+  \********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<app-header></app-header>\n\n<main id=\"home\">\n  <div class=\"home-bg\"></div>\n  <div class=\"home-main\">\n    <div class=\"title\">\n      <h2>Wondering what to watch?</h2>\n      <p>Let's help you find movies/shows that match with your expectations.</p>\n    </div>\n    <button id=\"movie-btn\" (click)=\"onMovieClick()\" [ngClass]=\"movie ? 'active' : ''\">Movie</button>\n    <button id=\"show-btn\" (click)=\"onShowClick()\" [ngClass]=\"show ? 'active' : ''\">Show</button>\n  \n    <div *ngIf=\"movie\" class=\"output\">\n      <app-movies-search-form></app-movies-search-form>\n    </div>\n  \n    <div *ngIf=\"show\" class=\"output\">\n      <app-shows-search-form></app-shows-search-form>\n    </div>\n  </div>  \n</main>\n\n<app-footer></app-footer>");
+
+/***/ }),
+
+/***/ "HhuZ":
+/*!************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/footer/footer.component.html ***!
+  \************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<footer>\n  <div class=\"container\">\n    &copy; 2021 by Franck Cheuzem, Sasha Srinivas, Braydon Viragh, Ikumi Mine.\n  </div>\n</footer>");
+
+/***/ }),
+
 /***/ "LjAB":
 /*!**********************************!*\
   !*** ./src/app/safe-url.pipe.ts ***!
@@ -170,7 +277,7 @@ SafeUrlPipe = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("/* styling for movie details page */\nmain{\n  padding-bottom: 1em;\n}\nh1{\n\n  margin-bottom: 0px;\n}\niframe{\n  display: block;\n  height: 30em;\n  width: 60%;\n  margin: auto;\n}\n#movie-status{\n  color: gray;\n  text-transform: capitalize;\n  padding: 0px;\n  margin-bottom: 1em;\n}\nh2{\n  text-transform: capitalize;\n}\n@media only screen and (max-width: 600px) {\n\n  iframe{\n    width: 100%;\n  }\n\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1vdmllLWRldGFpbC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLG1DQUFtQztBQUNuQztFQUNFLG1CQUFtQjtBQUNyQjtBQUNBOztFQUVFLGtCQUFrQjtBQUNwQjtBQUNBO0VBQ0UsY0FBYztFQUNkLFlBQVk7RUFDWixVQUFVO0VBQ1YsWUFBWTtBQUNkO0FBQ0E7RUFDRSxXQUFXO0VBQ1gsMEJBQTBCO0VBQzFCLFlBQVk7RUFDWixrQkFBa0I7QUFDcEI7QUFFQTtFQUNFLDBCQUEwQjtBQUM1QjtBQUNBOztFQUVFO0lBQ0UsV0FBVztFQUNiOztBQUVGIiwiZmlsZSI6Im1vdmllLWRldGFpbC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyogc3R5bGluZyBmb3IgbW92aWUgZGV0YWlscyBwYWdlICovXG5tYWlue1xuICBwYWRkaW5nLWJvdHRvbTogMWVtO1xufVxuaDF7XG5cbiAgbWFyZ2luLWJvdHRvbTogMHB4O1xufVxuaWZyYW1le1xuICBkaXNwbGF5OiBibG9jaztcbiAgaGVpZ2h0OiAzMGVtO1xuICB3aWR0aDogNjAlO1xuICBtYXJnaW46IGF1dG87XG59XG4jbW92aWUtc3RhdHVze1xuICBjb2xvcjogZ3JheTtcbiAgdGV4dC10cmFuc2Zvcm06IGNhcGl0YWxpemU7XG4gIHBhZGRpbmc6IDBweDtcbiAgbWFyZ2luLWJvdHRvbTogMWVtO1xufVxuXG5oMntcbiAgdGV4dC10cmFuc2Zvcm06IGNhcGl0YWxpemU7XG59XG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDYwMHB4KSB7XG5cbiAgaWZyYW1le1xuICAgIHdpZHRoOiAxMDAlO1xuICB9XG5cbn1cbiJdfQ== */");
+/* harmony default export */ __webpack_exports__["default"] = ("/* styling for movie details page */\nmain{\n  padding-bottom: 1em;\n  background-color: white\n}\nh1{\n font-size: 2em;\n  margin-bottom: 0px;\n  text-transform: capitalize;\n}\n#synopsis{\n  margin-top: 40px;\n}\niframe{\n  display: block;\n  height: 30em;\n  width: 60%;\n  margin: auto;\n}\n#movie-status{\n  color: gray;\n  text-transform: capitalize;\n  padding: 0px;\n  margin-bottom: 1em;\n}\nh2{\n  text-transform: capitalize;\n}\n@media only screen and (max-width: 600px) {\n\n  iframe{\n    width: 100%;\n  }\n\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1vdmllLWRldGFpbC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLG1DQUFtQztBQUNuQztFQUNFLG1CQUFtQjtFQUNuQjtBQUNGO0FBQ0E7Q0FDQyxjQUFjO0VBQ2Isa0JBQWtCO0VBQ2xCLDBCQUEwQjtBQUM1QjtBQUNBO0VBQ0UsZ0JBQWdCO0FBQ2xCO0FBQ0E7RUFDRSxjQUFjO0VBQ2QsWUFBWTtFQUNaLFVBQVU7RUFDVixZQUFZO0FBQ2Q7QUFDQTtFQUNFLFdBQVc7RUFDWCwwQkFBMEI7RUFDMUIsWUFBWTtFQUNaLGtCQUFrQjtBQUNwQjtBQUVBO0VBQ0UsMEJBQTBCO0FBQzVCO0FBQ0E7O0VBRUU7SUFDRSxXQUFXO0VBQ2I7O0FBRUYiLCJmaWxlIjoibW92aWUtZGV0YWlsLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKiBzdHlsaW5nIGZvciBtb3ZpZSBkZXRhaWxzIHBhZ2UgKi9cbm1haW57XG4gIHBhZGRpbmctYm90dG9tOiAxZW07XG4gIGJhY2tncm91bmQtY29sb3I6IHdoaXRlXG59XG5oMXtcbiBmb250LXNpemU6IDJlbTtcbiAgbWFyZ2luLWJvdHRvbTogMHB4O1xuICB0ZXh0LXRyYW5zZm9ybTogY2FwaXRhbGl6ZTtcbn1cbiNzeW5vcHNpc3tcbiAgbWFyZ2luLXRvcDogNDBweDtcbn1cbmlmcmFtZXtcbiAgZGlzcGxheTogYmxvY2s7XG4gIGhlaWdodDogMzBlbTtcbiAgd2lkdGg6IDYwJTtcbiAgbWFyZ2luOiBhdXRvO1xufVxuI21vdmllLXN0YXR1c3tcbiAgY29sb3I6IGdyYXk7XG4gIHRleHQtdHJhbnNmb3JtOiBjYXBpdGFsaXplO1xuICBwYWRkaW5nOiAwcHg7XG4gIG1hcmdpbi1ib3R0b206IDFlbTtcbn1cblxuaDJ7XG4gIHRleHQtdHJhbnNmb3JtOiBjYXBpdGFsaXplO1xufVxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA2MDBweCkge1xuXG4gIGlmcmFtZXtcbiAgICB3aWR0aDogMTAwJTtcbiAgfVxuXG59XG4iXX0= */");
 
 /***/ }),
 
@@ -183,7 +290,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<section class=\"container\">\n  <h2>Trending TV shows</h2>\n  <form #showsSearchForm=\"ngForm\" (ngSubmit)=\"onSubmit()\">\n    <div class=\"form-group\">\n      <label for=\"show-genre\" class=\"form-label\">Genre:</label>\n      <select id=\"show-genre\" name=\"show-genre\" class=\"form-control\" [(ngModel)]=\"genre\">\n        <option value=\"\">select a genre</option>\n        <option *ngFor=\"let g of genres\" [value]=\"g.slug\">{{ g.name }}</option>\n      </select>\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"show-year\" class=\"form-label\">Year:</label>\n      <select id=\"show-year\" name=\"show-year\" class=\"form-control\" [(ngModel)]=\"year\">\n        <option value=\"\">select a year</option>\n        <option *ngFor=\"let y of years\" [value]=\"y\">{{y}}</option>\n      </select>\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"show-lang\" class=\"form-label\">Language:</label>\n      <select id=\"show-lang\" name=\"show-lang\" class=\"form-control\" [(ngModel)]=\"language\">\n        <option value=\"\">select a language</option>\n        <option *ngFor=\"let l of languages\" [value]=\"l.code\">{{ l.name }}</option>\n      </select>\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"show-country\" class=\"form-label\">Country:</label>\n      <select id=\"show-country\" name=\"show-country\" class=\"form-control\" [(ngModel)]=\"country\">\n        <option value=\"\">select a country</option>\n        <option *ngFor=\"let c of countries\" [value]=\"c.code\">{{ c.name }}</option>\n      </select>\n    </div>\n    \n    <button type=\"submit\" class=\"btn btn-primary\">Search</button>\n  </form>\n</section>");
+/* harmony default export */ __webpack_exports__["default"] = ("<section class=\"container search-form\">\n  <h2>Trending shows</h2>\n  <form #showsSearchForm=\"ngForm\" (ngSubmit)=\"onSubmit()\">\n    <div class=\"form-group\">\n      <label for=\"show-genre\" class=\"form-label\">Genre:</label>\n      <select id=\"show-genre\" name=\"show-genre\" class=\"form-control\" [(ngModel)]=\"genre\">\n        <option value=\"\">select a genre</option>\n        <option *ngFor=\"let g of genres\" [value]=\"g.slug\">{{ g.name }}</option>\n      </select>\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"show-year\" class=\"form-label\">Year:</label>\n      <select id=\"show-year\" name=\"show-year\" class=\"form-control\" [(ngModel)]=\"year\">\n        <option value=\"\">select a year</option>\n        <option *ngFor=\"let y of years\" [value]=\"y\">{{y}}</option>\n      </select>\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"show-lang\" class=\"form-label\">Language:</label>\n      <select id=\"show-lang\" name=\"show-lang\" class=\"form-control\" [(ngModel)]=\"language\">\n        <option value=\"\">select a language</option>\n        <option *ngFor=\"let l of languages\" [value]=\"l.code\">{{ l.name }}</option>\n      </select>\n    </div>\n\n    <div class=\"form-group\">\n      <label for=\"show-country\" class=\"form-label\">Country:</label>\n      <select id=\"show-country\" name=\"show-country\" class=\"form-control\" [(ngModel)]=\"country\">\n        <option value=\"\">select a country</option>\n        <option *ngFor=\"let c of countries\" [value]=\"c.code\">{{ c.name }}</option>\n      </select>\n    </div>\n    \n    <button type=\"submit\" class=\"btn search-btn\">Search</button>\n  </form>\n</section>");
 
 /***/ }),
 
@@ -196,7 +303,20 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<main class=\"container\" id=\"main-content\">\n  <a (click)= \"goBack()\" class=\"return-link\"> new search</a>\n  <h1>Top 10 trending movies</h1>\n\n  <ul *ngIf=\"movies?.length > 0; else noResult\">\n    <li *ngFor=\"let movie of movies; let i=index\">\n      <figure>\n        <a routerLink=\"/movie-detail/{{movie.movie.ids.trakt}}\">\n          <img src=\"{{moviesImages[i]}}\" alt=\"{{movie.movie.title}} poster\">\n        </a>\n        <figcaption>{{movie.movie.title}}</figcaption>\n      </figure>\n    </li>\n  </ul>\n  <ng-template  #noResult>\n    <div class=\"no-result\">\n      No result found !\n    </div>\n  </ng-template>\n</main>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<app-header></app-header>\n\n<div class=\"content-wrapper\">\n  <main class=\"container\" id=\"main-content\">\n    <a (click)= \"goBack()\" class=\"return-link\"> new search</a>\n    <h1>Top 10 trending movies</h1>\n\n    <ul *ngIf=\"movies?.length > 0; else noResult\">\n      <li *ngFor=\"let movie of movies; let i=index\">\n        <figure>\n          <a routerLink=\"/movie-detail/{{movie.movie.ids.trakt}}\">\n            <img src=\"{{moviesImages[i]}}\" alt=\"{{movie.movie.title}} poster\">\n          </a>\n          <figcaption>{{movie.movie.title}}</figcaption>\n        </figure>\n      </li>\n    </ul>\n    <ng-template  #noResult>\n      <div class=\"no-result\">\n        No result found !\n      </div>\n    </ng-template>\n  </main>\n</div>\n\n<app-footer></app-footer>\n");
+
+/***/ }),
+
+/***/ "RV7M":
+/*!*****************************************!*\
+  !*** ./src/app/home/home.component.css ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("#home {\n  background-color: #222;\n  min-height: 100vh;\n  overflow: hidden;\n  position: relative;\n}\n.home-bg {\n  background-image: url('bg.302f2afd619a3f6ff57d.jpg');\n  background-repeat: no-repeat;\n  background-position-x: 40%;\n  background-size: contain;\n  height: 100vh;\n  width: 1920px;\n  transform: skewX(-20deg);\n  z-index: 5;\n}\n.home-main {\n  height: 100vh;\n  width: 50%;\n  position: absolute;\n  top: 0;\n  left: 0;\n  padding-top: 3%;\n  padding-left: 5%;\n  z-index: 10;\n}\n.title {\n  color: #fff;\n  margin-bottom: 15px;\n}\n.title h2 {\n  margin: 0;\n}\n/* movie and show button */\n#movie-btn, \n#show-btn {\n  width: 25%;\n  background-color: rgba(255, 255, 255, 0.918);\n  border-top-left-radius: 2px;\n  border-top-right-radius: 2px;\n  border-top: none;\n  border-left: none;\n  border-right: none;\n  border-bottom: solid rgba(187, 187, 187, 0.918) 2px;\n  padding: 10px 0;\n  margin: 0;\n  text-transform: uppercase;\n}\n#movie-btn:hover, \n#show-btn:hover {\n  background-color: rgba(187, 187, 187, 0.918);\n  border-bottom: solid rgba(187, 187, 187, 0.918) 2px;\n}\n#movie-btn.active,\n#show-btn.active {\n  background-color:rgba(187, 187, 187, 0.918);\n  color: #fff;\n  border-top: 5px solid #f48c06;\n  border-left: solid rgba(187, 187, 187, 0.918) 2px;\n  border-right: solid rgba(187, 187, 187, 0.918) 2px;\n  border-bottom: solid rgba(187, 187, 187, 0.918) 2px;\n}\n/* output */\n.output {\n  padding-bottom: 15px;\n  background-color: rgba(187, 187, 187, 0.918);\n  color: #fff;\n  border-bottom-right-radius: 3px;\n  border-bottom-left-radius: 3px;\n  border-top-right-radius: 3px;\n}\n@media only screen and (max-width: 800px) {\n  .home-main {\n    width: 70%;\n  }\n  .home-bg {\n    background-position-x: 20%;\n  }\n}\n@media only screen and (max-width: 500px) {\n  .home-main {\n    width: 90%;\n    padding-left: 10%;\n  }\n  .home-bg {\n    background-position-x: 5%;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhvbWUuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHNCQUFzQjtFQUN0QixpQkFBaUI7RUFDakIsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtBQUNwQjtBQUNBO0VBQ0Usb0RBQTZDO0VBQzdDLDRCQUE0QjtFQUM1QiwwQkFBMEI7RUFDMUIsd0JBQXdCO0VBQ3hCLGFBQWE7RUFDYixhQUFhO0VBQ2Isd0JBQXdCO0VBQ3hCLFVBQVU7QUFDWjtBQUNBO0VBQ0UsYUFBYTtFQUNiLFVBQVU7RUFDVixrQkFBa0I7RUFDbEIsTUFBTTtFQUNOLE9BQU87RUFDUCxlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLFdBQVc7QUFDYjtBQUNBO0VBQ0UsV0FBVztFQUNYLG1CQUFtQjtBQUNyQjtBQUNBO0VBQ0UsU0FBUztBQUNYO0FBQ0EsMEJBQTBCO0FBQzFCOztFQUVFLFVBQVU7RUFDViw0Q0FBNEM7RUFDNUMsMkJBQTJCO0VBQzNCLDRCQUE0QjtFQUM1QixnQkFBZ0I7RUFDaEIsaUJBQWlCO0VBQ2pCLGtCQUFrQjtFQUNsQixtREFBbUQ7RUFDbkQsZUFBZTtFQUNmLFNBQVM7RUFDVCx5QkFBeUI7QUFDM0I7QUFDQTs7RUFFRSw0Q0FBNEM7RUFDNUMsbURBQW1EO0FBQ3JEO0FBQ0E7O0VBRUUsMkNBQTJDO0VBQzNDLFdBQVc7RUFDWCw2QkFBNkI7RUFDN0IsaURBQWlEO0VBQ2pELGtEQUFrRDtFQUNsRCxtREFBbUQ7QUFDckQ7QUFDQSxXQUFXO0FBQ1g7RUFDRSxvQkFBb0I7RUFDcEIsNENBQTRDO0VBQzVDLFdBQVc7RUFDWCwrQkFBK0I7RUFDL0IsOEJBQThCO0VBQzlCLDRCQUE0QjtBQUM5QjtBQUNBO0VBQ0U7SUFDRSxVQUFVO0VBQ1o7RUFDQTtJQUNFLDBCQUEwQjtFQUM1QjtBQUNGO0FBQ0E7RUFDRTtJQUNFLFVBQVU7SUFDVixpQkFBaUI7RUFDbkI7RUFDQTtJQUNFLHlCQUF5QjtFQUMzQjtBQUNGIiwiZmlsZSI6ImhvbWUuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIiNob21lIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzIyMjtcbiAgbWluLWhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbn1cbi5ob21lLWJnIHtcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKC4uLy4uLy4uL2ltYWdlcy9iZy5qcGcpO1xuICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICBiYWNrZ3JvdW5kLXBvc2l0aW9uLXg6IDQwJTtcbiAgYmFja2dyb3VuZC1zaXplOiBjb250YWluO1xuICBoZWlnaHQ6IDEwMHZoO1xuICB3aWR0aDogMTkyMHB4O1xuICB0cmFuc2Zvcm06IHNrZXdYKC0yMGRlZyk7XG4gIHotaW5kZXg6IDU7XG59XG4uaG9tZS1tYWluIHtcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgd2lkdGg6IDUwJTtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDA7XG4gIGxlZnQ6IDA7XG4gIHBhZGRpbmctdG9wOiAzJTtcbiAgcGFkZGluZy1sZWZ0OiA1JTtcbiAgei1pbmRleDogMTA7XG59XG4udGl0bGUge1xuICBjb2xvcjogI2ZmZjtcbiAgbWFyZ2luLWJvdHRvbTogMTVweDtcbn1cbi50aXRsZSBoMiB7XG4gIG1hcmdpbjogMDtcbn1cbi8qIG1vdmllIGFuZCBzaG93IGJ1dHRvbiAqL1xuI21vdmllLWJ0biwgXG4jc2hvdy1idG4ge1xuICB3aWR0aDogMjUlO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuOTE4KTtcbiAgYm9yZGVyLXRvcC1sZWZ0LXJhZGl1czogMnB4O1xuICBib3JkZXItdG9wLXJpZ2h0LXJhZGl1czogMnB4O1xuICBib3JkZXItdG9wOiBub25lO1xuICBib3JkZXItbGVmdDogbm9uZTtcbiAgYm9yZGVyLXJpZ2h0OiBub25lO1xuICBib3JkZXItYm90dG9tOiBzb2xpZCByZ2JhKDE4NywgMTg3LCAxODcsIDAuOTE4KSAycHg7XG4gIHBhZGRpbmc6IDEwcHggMDtcbiAgbWFyZ2luOiAwO1xuICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xufVxuI21vdmllLWJ0bjpob3ZlciwgXG4jc2hvdy1idG46aG92ZXIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDE4NywgMTg3LCAxODcsIDAuOTE4KTtcbiAgYm9yZGVyLWJvdHRvbTogc29saWQgcmdiYSgxODcsIDE4NywgMTg3LCAwLjkxOCkgMnB4O1xufVxuI21vdmllLWJ0bi5hY3RpdmUsXG4jc2hvdy1idG4uYWN0aXZlIHtcbiAgYmFja2dyb3VuZC1jb2xvcjpyZ2JhKDE4NywgMTg3LCAxODcsIDAuOTE4KTtcbiAgY29sb3I6ICNmZmY7XG4gIGJvcmRlci10b3A6IDVweCBzb2xpZCAjZjQ4YzA2O1xuICBib3JkZXItbGVmdDogc29saWQgcmdiYSgxODcsIDE4NywgMTg3LCAwLjkxOCkgMnB4O1xuICBib3JkZXItcmlnaHQ6IHNvbGlkIHJnYmEoMTg3LCAxODcsIDE4NywgMC45MTgpIDJweDtcbiAgYm9yZGVyLWJvdHRvbTogc29saWQgcmdiYSgxODcsIDE4NywgMTg3LCAwLjkxOCkgMnB4O1xufVxuLyogb3V0cHV0ICovXG4ub3V0cHV0IHtcbiAgcGFkZGluZy1ib3R0b206IDE1cHg7XG4gIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMTg3LCAxODcsIDE4NywgMC45MTgpO1xuICBjb2xvcjogI2ZmZjtcbiAgYm9yZGVyLWJvdHRvbS1yaWdodC1yYWRpdXM6IDNweDtcbiAgYm9yZGVyLWJvdHRvbS1sZWZ0LXJhZGl1czogM3B4O1xuICBib3JkZXItdG9wLXJpZ2h0LXJhZGl1czogM3B4O1xufVxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA4MDBweCkge1xuICAuaG9tZS1tYWluIHtcbiAgICB3aWR0aDogNzAlO1xuICB9XG4gIC5ob21lLWJnIHtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uLXg6IDIwJTtcbiAgfVxufVxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA1MDBweCkge1xuICAuaG9tZS1tYWluIHtcbiAgICB3aWR0aDogOTAlO1xuICAgIHBhZGRpbmctbGVmdDogMTAlO1xuICB9XG4gIC5ob21lLWJnIHtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uLXg6IDUlO1xuICB9XG59Il19 */");
 
 /***/ }),
 
@@ -235,6 +355,65 @@ AppComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /***/ }),
 
+/***/ "UAjv":
+/*!**************************************************************!*\
+  !*** ./src/app/tv-shows-detail/tv-shows-detail.component.ts ***!
+  \**************************************************************/
+/*! exports provided: TvShowsDetailComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TvShowsDetailComponent", function() { return TvShowsDetailComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "mrSG");
+/* harmony import */ var _raw_loader_tv_shows_detail_component_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! raw-loader!./tv-shows-detail.component.html */ "eQow");
+/* harmony import */ var _tv_shows_detail_component_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./tv-shows-detail.component.css */ "eJzW");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "tyNb");
+/* harmony import */ var _shows_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../shows.service */ "mAJ2");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common */ "ofXK");
+
+
+
+
+
+
+
+let TvShowsDetailComponent = class TvShowsDetailComponent {
+    constructor(route, showsService, location) {
+        this.route = route;
+        this.showsService = showsService;
+        this.location = location;
+    }
+    ngOnInit() {
+        this.getShow();
+    }
+    goBack() {
+        this.location.back();
+    }
+    getShow() {
+        const id = String(this.route.snapshot.paramMap.get('id'));
+        this.showsService.getShow(id)
+            .subscribe(show => this.show = show);
+    }
+};
+TvShowsDetailComponent.ctorParameters = () => [
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"] },
+    { type: _shows_service__WEBPACK_IMPORTED_MODULE_5__["ShowsService"] },
+    { type: _angular_common__WEBPACK_IMPORTED_MODULE_6__["Location"] }
+];
+TvShowsDetailComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({
+        selector: 'app-tv-shows-detail',
+        template: _raw_loader_tv_shows_detail_component_html__WEBPACK_IMPORTED_MODULE_1__["default"],
+        styles: [_tv_shows_detail_component_css__WEBPACK_IMPORTED_MODULE_2__["default"]]
+    })
+], TvShowsDetailComponent);
+
+
+
+/***/ }),
+
 /***/ "VzVu":
 /*!**************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/app.component.html ***!
@@ -244,7 +423,7 @@ AppComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n<router-outlet></router-outlet>\n<footer class=\"container\">\n  &copy; 2021 by Franck Cheuzem.\n</footer>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<router-outlet></router-outlet>");
 
 /***/ }),
 
@@ -257,7 +436,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n<main *ngIf=\"movie\" class=\"container\" id>\n  <a (click)= \"goBack()\" class=\"return-link\"> return to list</a>\n<h1>Movie: {{movie.title}}</h1>\n<p id=\"movie-status\">{{movie.status}} - {{movie.year}}</p>\n<iframe *ngIf=\"movie.trailer; else elseBlock\"\n[src] =\"(movie.trailer).replace('http','https').replace('watch?v=','embed/') | safeUrl\" allow=\"fullscreen\"></iframe>\n\n<ng-template #elseBlock>\n  <div class=\"no-result\">\n    No trailer available!\n  </div>\n</ng-template>\n\n<h2>Synopsis</h2>\n\n{{movie.overview}}\n</main>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<app-header></app-header>\n\n<div class=\"content-wrapper\">\n  <main *ngIf=\"movie\" class=\"container\" id>\n    <a (click)= \"goBack()\" class=\"return-link\"> return to list</a>\n  <h1>Movie: {{movie.title}}</h1>\n  <p id=\"movie-status\">{{movie.status}} - {{movie.year}}</p>\n  <iframe *ngIf=\"movie.trailer; else elseBlock\"\n  [src] =\"(movie.trailer).replace('http','https').replace('watch?v=','embed/') | safeUrl\" allow=\"fullscreen\"></iframe>\n\n  <ng-template #elseBlock>\n    <div class=\"no-result\">\n      No trailer available!\n    </div>\n  </ng-template>\n\n  <section id=\"synopsis\">\n    <h2>Synopsis</h2>\n\n    {{movie.overview}}\n  </section>\n  </main>\n\n</div>\n\n<app-footer></app-footer>\n");
 
 /***/ }),
 
@@ -329,7 +508,7 @@ let ShowsSearchFormComponent = class ShowsSearchFormComponent {
             this.filter.country = this.country;
         }
         console.log(this.filter);
-        //this.router.navigate(['/movies-list'], { queryParams: this.filter });
+        this.router.navigate(['/tv-shows-list'], { queryParams: this.filter });
     }
     getShowsCountries() {
         this.showsService.getShowsCountries().subscribe(countries => this.countries = countries);
@@ -382,6 +561,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/platform-browser/animations */ "R1ws");
 /* harmony import */ var _shows_search_form_shows_search_form_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./shows-search-form/shows-search-form.component */ "Z09o");
 /* harmony import */ var _tv_shows_list_tv_shows_list_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./tv-shows-list/tv-shows-list.component */ "F8DU");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./home/home.component */ "9vUh");
+/* harmony import */ var _header_header_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./header/header.component */ "fECr");
+/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./footer/footer.component */ "fp1T");
+/* harmony import */ var _tv_shows_detail_tv_shows_detail_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./tv-shows-detail/tv-shows-detail.component */ "UAjv");
+
+
+
+
 
 
 
@@ -408,7 +595,11 @@ AppModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
             _safe_url_pipe__WEBPACK_IMPORTED_MODULE_10__["SafeUrlPipe"],
             _movie_detail_movie_detail_component__WEBPACK_IMPORTED_MODULE_11__["MovieDetailComponent"],
             _shows_search_form_shows_search_form_component__WEBPACK_IMPORTED_MODULE_13__["ShowsSearchFormComponent"],
-            _tv_shows_list_tv_shows_list_component__WEBPACK_IMPORTED_MODULE_14__["TvShowsListComponent"]
+            _tv_shows_list_tv_shows_list_component__WEBPACK_IMPORTED_MODULE_14__["TvShowsListComponent"],
+            _home_home_component__WEBPACK_IMPORTED_MODULE_15__["HomeComponent"],
+            _header_header_component__WEBPACK_IMPORTED_MODULE_16__["HeaderComponent"],
+            _footer_footer_component__WEBPACK_IMPORTED_MODULE_17__["FooterComponent"],
+            _tv_shows_detail_tv_shows_detail_component__WEBPACK_IMPORTED_MODULE_18__["TvShowsDetailComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"],
@@ -436,7 +627,7 @@ AppModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\nmain{\n  padding-bottom: 1em;\n\n}\n\nul li a{\n  color: #687980\n}\n\nul{\n  padding: 0px;\n}\n\nul li {\n  margin-top: 2em;\n  margin-bottom: 0.5em;\n  list-style-type: none;\n  display: inline-block;\n  width: 50%;\n  vertical-align: top;\n  padding: 0em 1em;\n}\n\nimg{\n  display: block;\n  height: 300px;\n}\n\nfigure{\n  height: 400px;\n}\n\nfigcaption{\n  text-transform: capitalize;\n  font-size: 1.3em;\n  margin-top: 0.6em;\n}\n\n@media screen and (max-width: 650px) {\n\n  ul li {\n    width: 100%\n  }\n\n  img{\n    margin: auto;\n  }\n\n  figcaption{\n    text-align: center;\n  }\n\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1vdmllcy1saXN0LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBO0VBQ0UsbUJBQW1COztBQUVyQjs7QUFFQTtFQUNFO0FBQ0Y7O0FBQ0E7RUFDRSxZQUFZO0FBQ2Q7O0FBQ0E7RUFDRSxlQUFlO0VBQ2Ysb0JBQW9CO0VBQ3BCLHFCQUFxQjtFQUNyQixxQkFBcUI7RUFDckIsVUFBVTtFQUNWLG1CQUFtQjtFQUNuQixnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxjQUFjO0VBQ2QsYUFBYTtBQUNmOztBQUNBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0UsMEJBQTBCO0VBQzFCLGdCQUFnQjtFQUNoQixpQkFBaUI7QUFDbkI7O0FBRUE7O0VBRUU7SUFDRTtFQUNGOztFQUVBO0lBQ0UsWUFBWTtFQUNkOztFQUVBO0lBQ0Usa0JBQWtCO0VBQ3BCOztBQUVGIiwiZmlsZSI6Im1vdmllcy1saXN0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcbm1haW57XG4gIHBhZGRpbmctYm90dG9tOiAxZW07XG5cbn1cblxudWwgbGkgYXtcbiAgY29sb3I6ICM2ODc5ODBcbn1cbnVse1xuICBwYWRkaW5nOiAwcHg7XG59XG51bCBsaSB7XG4gIG1hcmdpbi10b3A6IDJlbTtcbiAgbWFyZ2luLWJvdHRvbTogMC41ZW07XG4gIGxpc3Qtc3R5bGUtdHlwZTogbm9uZTtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB3aWR0aDogNTAlO1xuICB2ZXJ0aWNhbC1hbGlnbjogdG9wO1xuICBwYWRkaW5nOiAwZW0gMWVtO1xufVxuXG5pbWd7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICBoZWlnaHQ6IDMwMHB4O1xufVxuZmlndXJle1xuICBoZWlnaHQ6IDQwMHB4O1xufVxuXG5maWdjYXB0aW9ue1xuICB0ZXh0LXRyYW5zZm9ybTogY2FwaXRhbGl6ZTtcbiAgZm9udC1zaXplOiAxLjNlbTtcbiAgbWFyZ2luLXRvcDogMC42ZW07XG59XG5cbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDY1MHB4KSB7XG5cbiAgdWwgbGkge1xuICAgIHdpZHRoOiAxMDAlXG4gIH1cblxuICBpbWd7XG4gICAgbWFyZ2luOiBhdXRvO1xuICB9XG5cbiAgZmlnY2FwdGlvbntcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIH1cblxufVxuIl19 */");
+/* harmony default export */ __webpack_exports__["default"] = ("\nh1{\n font-size: 2em;\n  \n  text-transform: capitalize;\n}\nmain{\n  padding-bottom: 1em;\n  background-color: white;\n\n}\nul li a{\n  color: #687980\n}\nul{\n  padding: 0px;\n}\nul li {\n  margin-top: 2em;\n  margin-bottom: 0.5em;\n  list-style-type: none;\n  display: inline-block;\n  width: 50%;\n  vertical-align: top;\n  padding: 0em 1em;\n}\nimg{\n  display: block;\n  height: 300px;\n  margin: auto;\n}\nfigure{\n  height: 400px;\n}\nfigcaption{\n  text-transform: capitalize;\n  font-size: 1.3em;\n  margin-top: 0.6em;\n  text-align: center;\n}\n@media screen and (max-width: 650px) {\n\n  ul li {\n    width: 100%\n  }\n\n  img{\n    margin: auto;\n  }\n\n  figcaption{\n    text-align: center;\n  }\n\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1vdmllcy1saXN0LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBO0NBQ0MsY0FBYzs7RUFFYiwwQkFBMEI7QUFDNUI7QUFDQTtFQUNFLG1CQUFtQjtFQUNuQix1QkFBdUI7O0FBRXpCO0FBRUE7RUFDRTtBQUNGO0FBQ0E7RUFDRSxZQUFZO0FBQ2Q7QUFDQTtFQUNFLGVBQWU7RUFDZixvQkFBb0I7RUFDcEIscUJBQXFCO0VBQ3JCLHFCQUFxQjtFQUNyQixVQUFVO0VBQ1YsbUJBQW1CO0VBQ25CLGdCQUFnQjtBQUNsQjtBQUVBO0VBQ0UsY0FBYztFQUNkLGFBQWE7RUFDYixZQUFZO0FBQ2Q7QUFDQTtFQUNFLGFBQWE7QUFDZjtBQUVBO0VBQ0UsMEJBQTBCO0VBQzFCLGdCQUFnQjtFQUNoQixpQkFBaUI7RUFDakIsa0JBQWtCO0FBQ3BCO0FBRUE7O0VBRUU7SUFDRTtFQUNGOztFQUVBO0lBQ0UsWUFBWTtFQUNkOztFQUVBO0lBQ0Usa0JBQWtCO0VBQ3BCOztBQUVGIiwiZmlsZSI6Im1vdmllcy1saXN0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcbmgxe1xuIGZvbnQtc2l6ZTogMmVtO1xuICBcbiAgdGV4dC10cmFuc2Zvcm06IGNhcGl0YWxpemU7XG59XG5tYWlue1xuICBwYWRkaW5nLWJvdHRvbTogMWVtO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcblxufVxuXG51bCBsaSBhe1xuICBjb2xvcjogIzY4Nzk4MFxufVxudWx7XG4gIHBhZGRpbmc6IDBweDtcbn1cbnVsIGxpIHtcbiAgbWFyZ2luLXRvcDogMmVtO1xuICBtYXJnaW4tYm90dG9tOiAwLjVlbTtcbiAgbGlzdC1zdHlsZS10eXBlOiBub25lO1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIHdpZHRoOiA1MCU7XG4gIHZlcnRpY2FsLWFsaWduOiB0b3A7XG4gIHBhZGRpbmc6IDBlbSAxZW07XG59XG5cbmltZ3tcbiAgZGlzcGxheTogYmxvY2s7XG4gIGhlaWdodDogMzAwcHg7XG4gIG1hcmdpbjogYXV0bztcbn1cbmZpZ3VyZXtcbiAgaGVpZ2h0OiA0MDBweDtcbn1cblxuZmlnY2FwdGlvbntcbiAgdGV4dC10cmFuc2Zvcm06IGNhcGl0YWxpemU7XG4gIGZvbnQtc2l6ZTogMS4zZW07XG4gIG1hcmdpbi10b3A6IDAuNmVtO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDY1MHB4KSB7XG5cbiAgdWwgbGkge1xuICAgIHdpZHRoOiAxMDAlXG4gIH1cblxuICBpbWd7XG4gICAgbWFyZ2luOiBhdXRvO1xuICB9XG5cbiAgZmlnY2FwdGlvbntcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIH1cblxufVxuIl19 */");
 
 /***/ }),
 
@@ -531,6 +722,32 @@ MoviesSearchFormComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorat
 
 /***/ }),
 
+/***/ "eJzW":
+/*!***************************************************************!*\
+  !*** ./src/app/tv-shows-detail/tv-shows-detail.component.css ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("main{\n  padding-bottom: 1em;\n  height: 1000px;\n}\nh1{\n\n  margin-bottom: 0px;\n}\niframe{\n  display: block;\n  height: 30em;\n  width: 60%;\n  margin: auto;\n}\n#movie-status{\n  color: gray;\n  text-transform: capitalize;\n  padding: 0px;\n  margin-bottom: 1em;\n}\nh2{\n  text-transform: capitalize;\n}\n@media only screen and (max-width: 600px) {\n\n  iframe{\n    width: 100%;\n  }\n\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInR2LXNob3dzLWRldGFpbC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsbUJBQW1CO0VBQ25CLGNBQWM7QUFDaEI7QUFDQTs7RUFFRSxrQkFBa0I7QUFDcEI7QUFDQTtFQUNFLGNBQWM7RUFDZCxZQUFZO0VBQ1osVUFBVTtFQUNWLFlBQVk7QUFDZDtBQUNBO0VBQ0UsV0FBVztFQUNYLDBCQUEwQjtFQUMxQixZQUFZO0VBQ1osa0JBQWtCO0FBQ3BCO0FBRUE7RUFDRSwwQkFBMEI7QUFDNUI7QUFDQTs7RUFFRTtJQUNFLFdBQVc7RUFDYjs7QUFFRiIsImZpbGUiOiJ0di1zaG93cy1kZXRhaWwuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIm1haW57XG4gIHBhZGRpbmctYm90dG9tOiAxZW07XG4gIGhlaWdodDogMTAwMHB4O1xufVxuaDF7XG5cbiAgbWFyZ2luLWJvdHRvbTogMHB4O1xufVxuaWZyYW1le1xuICBkaXNwbGF5OiBibG9jaztcbiAgaGVpZ2h0OiAzMGVtO1xuICB3aWR0aDogNjAlO1xuICBtYXJnaW46IGF1dG87XG59XG4jbW92aWUtc3RhdHVze1xuICBjb2xvcjogZ3JheTtcbiAgdGV4dC10cmFuc2Zvcm06IGNhcGl0YWxpemU7XG4gIHBhZGRpbmc6IDBweDtcbiAgbWFyZ2luLWJvdHRvbTogMWVtO1xufVxuXG5oMntcbiAgdGV4dC10cmFuc2Zvcm06IGNhcGl0YWxpemU7XG59XG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDYwMHB4KSB7XG5cbiAgaWZyYW1le1xuICAgIHdpZHRoOiAxMDAlO1xuICB9XG5cbn1cbiJdfQ== */");
+
+/***/ }),
+
+/***/ "eQow":
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/tv-shows-detail/tv-shows-detail.component.html ***!
+  \******************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<app-header></app-header>\n\n<main *ngIf=\"show\" class=\"container\" id>\n  <a (click)= \"goBack()\" class=\"return-link\"> return to list</a>\n  <h1>TV Show: {{show.title}}</h1>\n  <p class=\"tv-status\">Show Status: {{show.status}} - {{show.year}}</p>\n  <p class=\"tv-status\">Network: {{show.network}}</p>\n\n  <ng-template #elseBlock>\n    <div class=\"no-result\">\n      No trailer available!\n    </div>\n  </ng-template>\n\n  <h2>Synopsis</h2>\n\n  {{show.overview}}\n</main>\n\n<app-footer></app-footer>\n\n");
+
+/***/ }),
+
 /***/ "f8zo":
 /*!*********************************************************************!*\
   !*** ./src/app/movies-search-form/movies-search-form.component.css ***!
@@ -540,7 +757,43 @@ MoviesSearchFormComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorat
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("form{\n  width: 40%;\n  margin: 1em auto;\n\n}\nmain{\n  padding-bottom: 1em;\n}\n@media only screen and (max-width: 500px) {\n  form{\n    width: 100%;\n    margin: 1em auto;\n\n  }\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1vdmllcy1zZWFyY2gtZm9ybS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsVUFBVTtFQUNWLGdCQUFnQjs7QUFFbEI7QUFDQTtFQUNFLG1CQUFtQjtBQUNyQjtBQUVBO0VBQ0U7SUFDRSxXQUFXO0lBQ1gsZ0JBQWdCOztFQUVsQjtBQUNGIiwiZmlsZSI6Im1vdmllcy1zZWFyY2gtZm9ybS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiZm9ybXtcbiAgd2lkdGg6IDQwJTtcbiAgbWFyZ2luOiAxZW0gYXV0bztcblxufVxubWFpbntcbiAgcGFkZGluZy1ib3R0b206IDFlbTtcbn1cblxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA1MDBweCkge1xuICBmb3Jte1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIG1hcmdpbjogMWVtIGF1dG87XG5cbiAgfVxufVxuIl19 */");
+/* harmony default export */ __webpack_exports__["default"] = ("/*\nform{\n  width: 40%;\n  margin: 1em auto;\n}\nmain{\n  padding-bottom: 1em;\n}\n*/\n.search-form {\n  width: 100%;\n  border-radius: 5px;\n  padding-top: 20px; \n}\n.search-form h2 {\n  font-weight: 400;\n  text-transform: uppercase;\n  width: 80%;\n  margin: 0 auto;\n}\n.search-form label {\n  font-weight: 300;\n}\nform{\n  width: 80%;\n  margin: 0 auto;\n}\n.search-btn {\n  width: 100%;\n  color: #fff;\n  background-color: #e85d04;\n}\n.search-btn:hover {\n  background-color: #dc2f02;\n}\n@media only screen and (max-width: 500px) {\n  form{\n    width: 100%;\n  }\n  .search-form {\n    padding-top: 5px; \n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1vdmllcy1zZWFyY2gtZm9ybS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7OztDQVFDO0FBQ0Q7RUFDRSxXQUFXO0VBQ1gsa0JBQWtCO0VBQ2xCLGlCQUFpQjtBQUNuQjtBQUNBO0VBQ0UsZ0JBQWdCO0VBQ2hCLHlCQUF5QjtFQUN6QixVQUFVO0VBQ1YsY0FBYztBQUNoQjtBQUNBO0VBQ0UsZ0JBQWdCO0FBQ2xCO0FBQ0E7RUFDRSxVQUFVO0VBQ1YsY0FBYztBQUNoQjtBQUNBO0VBQ0UsV0FBVztFQUNYLFdBQVc7RUFDWCx5QkFBeUI7QUFDM0I7QUFDQTtFQUNFLHlCQUF5QjtBQUMzQjtBQUNBO0VBQ0U7SUFDRSxXQUFXO0VBQ2I7RUFDQTtJQUNFLGdCQUFnQjtFQUNsQjtBQUNGIiwiZmlsZSI6Im1vdmllcy1zZWFyY2gtZm9ybS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLypcbmZvcm17XG4gIHdpZHRoOiA0MCU7XG4gIG1hcmdpbjogMWVtIGF1dG87XG59XG5tYWlue1xuICBwYWRkaW5nLWJvdHRvbTogMWVtO1xufVxuKi9cbi5zZWFyY2gtZm9ybSB7XG4gIHdpZHRoOiAxMDAlO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIHBhZGRpbmctdG9wOiAyMHB4OyBcbn1cbi5zZWFyY2gtZm9ybSBoMiB7XG4gIGZvbnQtd2VpZ2h0OiA0MDA7XG4gIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XG4gIHdpZHRoOiA4MCU7XG4gIG1hcmdpbjogMCBhdXRvO1xufVxuLnNlYXJjaC1mb3JtIGxhYmVsIHtcbiAgZm9udC13ZWlnaHQ6IDMwMDtcbn1cbmZvcm17XG4gIHdpZHRoOiA4MCU7XG4gIG1hcmdpbjogMCBhdXRvO1xufVxuLnNlYXJjaC1idG4ge1xuICB3aWR0aDogMTAwJTtcbiAgY29sb3I6ICNmZmY7XG4gIGJhY2tncm91bmQtY29sb3I6ICNlODVkMDQ7XG59XG4uc2VhcmNoLWJ0bjpob3ZlciB7XG4gIGJhY2tncm91bmQtY29sb3I6ICNkYzJmMDI7XG59XG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDUwMHB4KSB7XG4gIGZvcm17XG4gICAgd2lkdGg6IDEwMCU7XG4gIH1cbiAgLnNlYXJjaC1mb3JtIHtcbiAgICBwYWRkaW5nLXRvcDogNXB4OyBcbiAgfVxufSJdfQ== */");
+
+/***/ }),
+
+/***/ "fECr":
+/*!********************************************!*\
+  !*** ./src/app/header/header.component.ts ***!
+  \********************************************/
+/*! exports provided: HeaderComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HeaderComponent", function() { return HeaderComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "mrSG");
+/* harmony import */ var _raw_loader_header_component_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! raw-loader!./header.component.html */ "kjkU");
+/* harmony import */ var _header_component_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./header.component.css */ "DN7M");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "fXoL");
+
+
+
+
+let HeaderComponent = class HeaderComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+HeaderComponent.ctorParameters = () => [];
+HeaderComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({
+        selector: 'app-header',
+        template: _raw_loader_header_component_html__WEBPACK_IMPORTED_MODULE_1__["default"],
+        styles: [_header_component_css__WEBPACK_IMPORTED_MODULE_2__["default"]]
+    })
+], HeaderComponent);
+
+
 
 /***/ }),
 
@@ -667,6 +920,42 @@ MoviesListComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 /***/ }),
 
+/***/ "fp1T":
+/*!********************************************!*\
+  !*** ./src/app/footer/footer.component.ts ***!
+  \********************************************/
+/*! exports provided: FooterComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FooterComponent", function() { return FooterComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "mrSG");
+/* harmony import */ var _raw_loader_footer_component_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! raw-loader!./footer.component.html */ "HhuZ");
+/* harmony import */ var _footer_component_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./footer.component.css */ "1XXE");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "fXoL");
+
+
+
+
+let FooterComponent = class FooterComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+FooterComponent.ctorParameters = () => [];
+FooterComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Component"])({
+        selector: 'app-footer',
+        template: _raw_loader_footer_component_html__WEBPACK_IMPORTED_MODULE_1__["default"],
+        styles: [_footer_component_css__WEBPACK_IMPORTED_MODULE_2__["default"]]
+    })
+], FooterComponent);
+
+
+
+/***/ }),
+
 /***/ "h50C":
 /*!**************************************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/tv-shows-list/tv-shows-list.component.html ***!
@@ -676,7 +965,7 @@ MoviesListComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<main class=\"container\">\n  <a (click)= \"goBack()\" class=\"return-link\"> new search</a>\n  <h1>Top 10 trending tv shows</h1>\n\n\n\n  <ul *ngIf=\"tvshows?.length > 0; else noResult\">\n    <li *ngFor=\"let tvshow of tvshows\">\n      <a routerLink=\"/tvshow-detail/{{tvshow.tvshow.ids.trakt}}\">\n        {{tvshow.tvshow.title}}\n      </a>\n    </li>\n  </ul>\n  <ng-template  #noResult>\n    <div class=\"no-result\">\n      No result found !\n    </div>\n  </ng-template>\n</main>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<app-header></app-header>\n<div class=\"content-wrapper\">\n<main class=\"container\" id=\"main-content\">\n  <a (click)= \"goBack()\" class=\"return-link\"> new search</a>\n  <h1>Top 10 trending tv shows</h1>\n\n\n\n  <ol *ngIf=\"tvshows?.length > 0; else noResult\">\n    <li *ngFor=\"let tvshow of tvshows\">\n      <a routerLink=\"/tv-shows-detail/{{tvshow.show.ids.trakt}}\">\n<!--        <img src=\"{{tvImages[i]}}\" alt=\"{{movie.movie.title}} poster\">-->\n        {{tvshow.show.title}}\n      </a>\n    </li>\n  </ol>\n  <ng-template  #noResult>\n    <div class=\"no-result\">\n      No result found !\n    </div>\n  </ng-template>\n</main>\n</div>\n<app-footer></app-footer>\n\n");
 
 /***/ }),
 
@@ -689,7 +978,20 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("main{\n  padding-bottom: 1em;\n\n}\n\nul li a{\n  color: #687980\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInR2LXNob3dzLWxpc3QuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLG1CQUFtQjs7QUFFckI7O0FBRUE7RUFDRTtBQUNGIiwiZmlsZSI6InR2LXNob3dzLWxpc3QuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIm1haW57XG4gIHBhZGRpbmctYm90dG9tOiAxZW07XG5cbn1cblxudWwgbGkgYXtcbiAgY29sb3I6ICM2ODc5ODBcbn1cbiJdfQ== */");
+/* harmony default export */ __webpack_exports__["default"] = ("main{\n  padding-bottom: 1em;\n  background-color: white;\n  height: 1000px;\n}\nh1{\n font-size: 2em;\n  margin-bottom: 0px;\n}\nul li a{\n  color: #687980\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInR2LXNob3dzLWxpc3QuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLG1CQUFtQjtFQUNuQix1QkFBdUI7RUFDdkIsY0FBYztBQUNoQjtBQUNBO0NBQ0MsY0FBYztFQUNiLGtCQUFrQjtBQUNwQjtBQUNBO0VBQ0U7QUFDRiIsImZpbGUiOiJ0di1zaG93cy1saXN0LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJtYWlue1xuICBwYWRkaW5nLWJvdHRvbTogMWVtO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgaGVpZ2h0OiAxMDAwcHg7XG59XG5oMXtcbiBmb250LXNpemU6IDJlbTtcbiAgbWFyZ2luLWJvdHRvbTogMHB4O1xufVxudWwgbGkgYXtcbiAgY29sb3I6ICM2ODc5ODBcbn1cbiJdfQ== */");
+
+/***/ }),
+
+/***/ "kjkU":
+/*!************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/header/header.component.html ***!
+  \************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<nav class=\"navbar navbar-inverse\" id=\"header\">\n  <div class=\"container\">\n\n    <div class=\"navbar-header\">\n      <!--Toggle Menu-->\n      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n        <span class=\"sr-only\">Toggle navigation</span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n      </button>\n\n      <!---Logo-->\n      <h1><a class=\"navbar-brand\" routerLink=\"/home\" id=\"logo\">MovieTV</a></h1>\n    </div>\n    \n    <!--Main nav item-->\n    <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n      <ul class=\"nav navbar-nav navbar-right\" id=\"nav-item\">\n        <li><a routerLink=\"/home\">Home</a></li>\n        <li><a href=\"#\">FAQ</a></li>\n        <li><a href=\"#\">Contact</a></li>\n      </ul>\n    </div>\n  </div>\n</nav>\n");
 
 /***/ }),
 
@@ -724,6 +1026,8 @@ let ShowsService = class ShowsService {
                 'trakt-api-key': '13ea95c9693cceb363b1fef70b372ec06213cb0d144ded8d7457b8ed055798ac'
             })
         };
+        this.image_api_key = "89a4c80912c77b3a55862d978346c308";
+        this.image_base_url = "https://api.themoviedb.org/3/";
     }
     //Get countries for shows
     //Returns a list of countries for shows
@@ -737,14 +1041,18 @@ let ShowsService = class ShowsService {
         return this.http.get(this.Url + 'genres/shows', this.httpOptions)
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["tap"])(_ => this.log('fetched genres')), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(this.handleError('getGenres', [])));
     }
+    getTVImages(id) {
+        return this.http.get(this.image_base_url + 'tv/' + id + '/images?api_key=' + this.image_api_key)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["retry"])(2), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["tap"])(_ => this.log('fetched tv images')), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(this.handleError('getTVImage', {})));
+    }
     //Get languages for shows
     //Returns a list of languages for shows
     getShowsLanguages() {
         return this.http.get(this.Url + 'languages/shows', this.httpOptions)
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["tap"])(_ => this.log('fetched languages')), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(this.handleError('getLanguages', [])));
     }
-    //Get trending shows based on user's choice of genre, year, language, or country 
-    //Returns a list of trending shows  
+    //Get trending shows based on user's choice of genre, year, language, or country
+    //Returns a list of trending shows
     getTrendingShows(filter) {
         //I was trying to get values from object but it didn't work
         //var queryString = Object.keys(filter).map(key => key + '=' + filter.genre).join('&');
@@ -759,6 +1067,10 @@ let ShowsService = class ShowsService {
         console.log(this.Url + 'shows/trending?' + filter.join('&'));
         return this.http.get(this.Url + 'shows/trending?' + filter.join('&'), this.httpOptions)
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["tap"])(_ => this.log('fetched shows')), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(this.handleError('getTrendingShows', [])));
+    }
+    getShow(id) {
+        return this.http.get('https://api.trakt.tv/shows/' + id + '?extended=full', this.httpOptions)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["retry"])(2), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["tap"])(_ => this.log('fetched show')), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(this.handleError('getShow', {})));
     }
     /**
    * Handle Http operation that failed.
@@ -803,7 +1115,7 @@ ShowsService = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<main class=\"container\">\n  <h1>Trending movies Search </h1>\n  <p>Wondering what to watch? let's help you find movies that match  with your expectations.</p>\n  <form (ngSubmit)=\"onSubmit()\">\n    <div class=\"form-group\">\n      <label for=\"genre\">Genre:</label>\n      <select class=\"form-control\"  id=\"genre\" name=\"genre\"\n      [(ngModel)]=\"genre\" [ngModelOptions]=\"{standalone: true}\">\n        <option value=\"\">select a genre</option>\n        <option *ngFor=\"let g of genres\" [value]=\"g.slug\">{{g.name}}</option>\n      </select>\n    </div>\n    <div class=\"form-group\">\n      <label for=\"year\">Year:</label>\n      <select class=\"form-control\"  id=\"year\" name=\"year\"\n      [(ngModel)]=\"year\" [ngModelOptions]=\"{standalone: true}\">\n        <option value=\"\" selected>select a year</option>\n        <option *ngFor=\"let y of years\" [value]=\"y\">{{y}}</option>\n      </select>\n    </div>\n    <div class=\"form-group\">\n      <label for=\"language\">Language:</label>\n      <select class=\"form-control\"  id=\"language\" name=\"language\"\n      [(ngModel)]=\"language\" [ngModelOptions]=\"{standalone: true}\">\n        <option value=\"\">select a language</option>\n        <option *ngFor=\"let l of languages\" [value]=\"l.code\">{{l.name}}</option>\n      </select>\n    </div>\n    <div class=\"form-group\">\n      <label for=\"country\">Country:</label>\n      <select class=\"form-control\"  id=\"country\" country\n      [(ngModel)]=\"country\" [ngModelOptions]=\"{standalone: true}\">\n        <option value=\"\">select a country</option>\n        <option *ngFor=\"let c of countries\" [value]=\"c.code\">{{c.name}}</option>\n      </select>\n    </div>\n    <button type=\"submit\" class=\"btn btn-success\">Search</button>\n  </form>\n</main>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<main class=\"container search-form\">\n  <h2>Trending movies</h2>\n  <!--<p>Wondering what to watch? let's help you find movies that match  with your expectations.</p>-->\n  <form (ngSubmit)=\"onSubmit()\">\n    <div class=\"form-group\">\n      <label for=\"genre\">Genre:</label>\n      <select class=\"form-control\"  id=\"genre\" name=\"genre\"\n      [(ngModel)]=\"genre\" [ngModelOptions]=\"{standalone: true}\">\n        <option value=\"\">select a genre</option>\n        <option *ngFor=\"let g of genres\" [value]=\"g.slug\">{{g.name}}</option>\n      </select>\n    </div>\n    <div class=\"form-group\">\n      <label for=\"year\">Year:</label>\n      <select class=\"form-control\"  id=\"year\" name=\"year\"\n      [(ngModel)]=\"year\" [ngModelOptions]=\"{standalone: true}\">\n        <option value=\"\" selected>select a year</option>\n        <option *ngFor=\"let y of years\" [value]=\"y\">{{y}}</option>\n      </select>\n    </div>\n    <div class=\"form-group\">\n      <label for=\"language\">Language:</label>\n      <select class=\"form-control\"  id=\"language\" name=\"language\"\n      [(ngModel)]=\"language\" [ngModelOptions]=\"{standalone: true}\">\n        <option value=\"\">select a language</option>\n        <option *ngFor=\"let l of languages\" [value]=\"l.code\">{{l.name}}</option>\n      </select>\n    </div>\n    <div class=\"form-group\">\n      <label for=\"country\">Country:</label>\n      <select class=\"form-control\"  id=\"country\" country\n      [(ngModel)]=\"country\" [ngModelOptions]=\"{standalone: true}\">\n        <option value=\"\">select a country</option>\n        <option *ngFor=\"let c of countries\" [value]=\"c.code\">{{c.name}}</option>\n      </select>\n    </div>\n    <button type=\"submit\" class=\"btn search-btn\">Search</button>\n  </form>\n</main>\n");
 
 /***/ }),
 
@@ -1003,7 +1315,7 @@ MoviesService = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzaG93cy1zZWFyY2gtZm9ybS5jb21wb25lbnQuY3NzIn0= */");
+/* harmony default export */ __webpack_exports__["default"] = (".search-form {\n  width: 100%;\n  border-radius: 5px;\n  padding-top: 20px; \n}\n.search-form h2 {\n  font-weight: 400;\n  text-transform: uppercase;\n  width: 80%;\n  margin: 0 auto;\n}\n.search-form label {\n  font-weight: 300;\n}\nform{\n  width: 80%;\n  margin: 0 auto;\n}\n.search-btn {\n  width: 100%;\n  color: #fff;\n  background-color: #e85d04;\n}\n.search-btn:hover {\n  background-color: #dc2f02;\n}\n@media only screen and (max-width: 500px) {\n  form{\n    width: 100%;\n  }\n  .search-form {\n    padding-top: 5px; \n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNob3dzLXNlYXJjaC1mb3JtLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxXQUFXO0VBQ1gsa0JBQWtCO0VBQ2xCLGlCQUFpQjtBQUNuQjtBQUNBO0VBQ0UsZ0JBQWdCO0VBQ2hCLHlCQUF5QjtFQUN6QixVQUFVO0VBQ1YsY0FBYztBQUNoQjtBQUNBO0VBQ0UsZ0JBQWdCO0FBQ2xCO0FBQ0E7RUFDRSxVQUFVO0VBQ1YsY0FBYztBQUNoQjtBQUNBO0VBQ0UsV0FBVztFQUNYLFdBQVc7RUFDWCx5QkFBeUI7QUFDM0I7QUFDQTtFQUNFLHlCQUF5QjtBQUMzQjtBQUNBO0VBQ0U7SUFDRSxXQUFXO0VBQ2I7RUFDQTtJQUNFLGdCQUFnQjtFQUNsQjtBQUNGIiwiZmlsZSI6InNob3dzLXNlYXJjaC1mb3JtLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuc2VhcmNoLWZvcm0ge1xuICB3aWR0aDogMTAwJTtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBwYWRkaW5nLXRvcDogMjBweDsgXG59XG4uc2VhcmNoLWZvcm0gaDIge1xuICBmb250LXdlaWdodDogNDAwO1xuICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xuICB3aWR0aDogODAlO1xuICBtYXJnaW46IDAgYXV0bztcbn1cbi5zZWFyY2gtZm9ybSBsYWJlbCB7XG4gIGZvbnQtd2VpZ2h0OiAzMDA7XG59XG5mb3Jte1xuICB3aWR0aDogODAlO1xuICBtYXJnaW46IDAgYXV0bztcbn1cbi5zZWFyY2gtYnRuIHtcbiAgd2lkdGg6IDEwMCU7XG4gIGNvbG9yOiAjZmZmO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZTg1ZDA0O1xufVxuLnNlYXJjaC1idG46aG92ZXIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZGMyZjAyO1xufVxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA1MDBweCkge1xuICBmb3Jte1xuICAgIHdpZHRoOiAxMDAlO1xuICB9XG4gIC5zZWFyY2gtZm9ybSB7XG4gICAgcGFkZGluZy10b3A6IDVweDsgXG4gIH1cbn0iXX0= */");
 
 /***/ }),
 
@@ -1020,10 +1332,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "mrSG");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "tyNb");
-/* harmony import */ var _movies_search_form_movies_search_form_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./movies-search-form/movies-search-form.component */ "dMOQ");
-/* harmony import */ var _movies_list_movies_list_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./movies-list/movies-list.component */ "fb62");
-/* harmony import */ var _movie_detail_movie_detail_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./movie-detail/movie-detail.component */ "n2lM");
-/* harmony import */ var _shows_search_form_shows_search_form_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./shows-search-form/shows-search-form.component */ "Z09o");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./home/home.component */ "9vUh");
+/* harmony import */ var _movies_search_form_movies_search_form_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./movies-search-form/movies-search-form.component */ "dMOQ");
+/* harmony import */ var _movies_list_movies_list_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./movies-list/movies-list.component */ "fb62");
+/* harmony import */ var _movie_detail_movie_detail_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./movie-detail/movie-detail.component */ "n2lM");
+/* harmony import */ var _shows_search_form_shows_search_form_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./shows-search-form/shows-search-form.component */ "Z09o");
+/* harmony import */ var _tv_shows_list_tv_shows_list_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./tv-shows-list/tv-shows-list.component */ "F8DU");
+/* harmony import */ var _tv_shows_detail_tv_shows_detail_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./tv-shows-detail/tv-shows-detail.component */ "UAjv");
+
+
+
 
 
 
@@ -1032,11 +1350,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const routes = [
-    { path: 'movies-search', component: _movies_search_form_movies_search_form_component__WEBPACK_IMPORTED_MODULE_3__["MoviesSearchFormComponent"] },
-    { path: 'movies-list', component: _movies_list_movies_list_component__WEBPACK_IMPORTED_MODULE_4__["MoviesListComponent"] },
-    { path: 'movie-detail/:id', component: _movie_detail_movie_detail_component__WEBPACK_IMPORTED_MODULE_5__["MovieDetailComponent"] },
-    { path: '', redirectTo: '/movies-search', pathMatch: 'full' },
-    { path: 'shows-search', component: _shows_search_form_shows_search_form_component__WEBPACK_IMPORTED_MODULE_6__["ShowsSearchFormComponent"] },
+    { path: 'movies-search', component: _movies_search_form_movies_search_form_component__WEBPACK_IMPORTED_MODULE_4__["MoviesSearchFormComponent"] },
+    { path: 'movies-list', component: _movies_list_movies_list_component__WEBPACK_IMPORTED_MODULE_5__["MoviesListComponent"] },
+    { path: 'movie-detail/:id', component: _movie_detail_movie_detail_component__WEBPACK_IMPORTED_MODULE_6__["MovieDetailComponent"] },
+    { path: 'home', component: _home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"] },
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: 'shows-search', component: _shows_search_form_shows_search_form_component__WEBPACK_IMPORTED_MODULE_7__["ShowsSearchFormComponent"] },
+    { path: 'tv-shows-list', component: _tv_shows_list_tv_shows_list_component__WEBPACK_IMPORTED_MODULE_8__["TvShowsListComponent"] },
+    { path: 'tv-shows-detail/:id', component: _tv_shows_detail_tv_shows_detail_component__WEBPACK_IMPORTED_MODULE_9__["TvShowsDetailComponent"] }
 ];
 let AppRoutingModule = class AppRoutingModule {
 };
@@ -1101,4 +1422,4 @@ webpackEmptyAsyncContext.id = "zn8P";
 /***/ })
 
 },[[0,"runtime","vendor"]]]);
-//# sourceMappingURL=main.3881c6a95a73becc684a.js.map
+//# sourceMappingURL=main.508ba30a5b05c1140904.js.map
