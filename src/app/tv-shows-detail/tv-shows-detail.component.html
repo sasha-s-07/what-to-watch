@@ -3,8 +3,8 @@
 <main *ngIf="show" class="container" id>
   <a (click)= "goBack()" class="return-link"> return to list</a>
   <h1>TV Show: {{show.title}}</h1>
-  <p class="tv-status">{{show.status}} - {{show.year}}</p>
-  <p class="tv-status">Network:{{show.network}}</p>
+  <p class="tv-status">Show Status: {{show.status}} - {{show.year}}</p>
+  <p class="tv-status">Network: {{show.network}}</p>
 
   <ng-template #elseBlock>
     <div class="no-result">
@@ -18,3 +18,4 @@
 </main>
 
 <app-footer></app-footer>
+

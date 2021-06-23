@@ -1,21 +1,25 @@
 <app-header></app-header>
-<main class="container">
+<div class="content-wrapper">
+<main class="container" id="main-content">
   <a (click)= "goBack()" class="return-link"> new search</a>
   <h1>Top 10 trending tv shows</h1>
 
 
 
-  <ul *ngIf="tvshows?.length > 0; else noResult">
+  <ol *ngIf="tvshows?.length > 0; else noResult">
     <li *ngFor="let tvshow of tvshows">
       <a routerLink="/tv-shows-detail/{{tvshow.show.ids.trakt}}">
+<!--        <img src="{{tvImages[i]}}" alt="{{movie.movie.title}} poster">-->
         {{tvshow.show.title}}
       </a>
     </li>
-  </ul>
+  </ol>
   <ng-template  #noResult>
     <div class="no-result">
       No result found !
     </div>
   </ng-template>
 </main>
+</div>
 <app-footer></app-footer>
+

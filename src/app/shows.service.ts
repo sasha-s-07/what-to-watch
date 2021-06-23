@@ -24,6 +24,8 @@ export class ShowsService {
       'trakt-api-key': '13ea95c9693cceb363b1fef70b372ec06213cb0d144ded8d7457b8ed055798ac'
     })
   };
+  image_api_key : string = "89a4c80912c77b3a55862d978346c308";
+  image_base_url : string = "https://api.themoviedb.org/3/";
 
   //Get countries for shows
   //Returns a list of countries for shows
@@ -43,6 +45,15 @@ export class ShowsService {
       tap(_ => this.log('fetched genres')),
       catchError(this.handleError<Genre[]>('getGenres', []))
     );
+  }
+
+  getTVImages(id: string){
+    return this.http.get(this.image_base_url + 'tv/' + id +'/images?api_key=' + this.image_api_key)
+      .pipe(
+        retry(2),
+        tap(_ => this.log('fetched tv images')),
+        catchError(this.handleError('getTVImage', {}))
+      );
   }
 
   //Get languages for shows
